@@ -1,0 +1,1 @@
+{"samples": 486400, "n_size": 389120, "normalised": true, "batches": 128, "num_filters": 32, "kernel_size": 3, "shape": [512, 1], "epochs": 10000, "dropout": 0.2, "levels": 9, "learning_rate": 0.00014329, "patience_epochs": 100, "val_split": 0.08, "hidden_layer": 3, "decay:steps": 100000, "decay_rate": 0.96}
