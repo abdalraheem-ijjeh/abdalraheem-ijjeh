@@ -94,15 +94,20 @@
 % option 1
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{AN INTRODUCTION FOR ARTIFICIAL INTELLIGENCE APPROACHES IN SHM/NDT APPLICATIONS}
+
+% Background for the first frame
+\setbeamertemplate{background}{%
+	\ifnum\value{framenumber}=0%
+	\includegraphics[width=\paperwidth,height=\paperheight]{figures/AI_BG_2.jpg}%
+	\fi%
+}
+
+
 %\subtitle{In preparation for a Ph.D. defence}
 \author{\textbf{Abdalraheem A. Ijjeh }} 
 % logo align to Institute 
 \institute{Postdoc at GRVC Robotics Laboratory \\
-	 University of Seville, Spain.
-	 \\ 
-	\vspace{-1.5cm}
-	\flushright 
-	\includegraphics[width=6cm]{imp_logo.png}}
+	 University of Seville, Spain}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\tikzexternalize % activate!
@@ -225,11 +230,11 @@
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\begin{frame}{Non-destructive testing (NDT)}
 		\begin{columns}[T]
-			\begin{column}{.35\textwidth}
+			\begin{column}[c]{.35\textwidth}
 				\justifying
 				NDT techniques are used to inspect materials, components, and structures without causing permanent damage or altering their integrity. 
 			\end{column}
-			\begin{column}{.65\textwidth}
+			\begin{column}[c]{.65\textwidth}
 				\includegraphics[width=0.95\textwidth]{NDT.png}
 			\end{column}
 		\end{columns}
@@ -260,232 +265,6 @@
 		Each method has its strengths and limitations, and NDT professionals select the appropriate technique or combination of techniques to ensure accurate and reliable inspection results.
 		
 	}
-	%%%%%%%%%%%%%%%%%%%%
-	\begin{frame}{Ultrasonic testing (UT)} 
-		\begin{columns}[T]
-			\begin{column}[c]{0.38\textwidth}
-				\textbf{Ultrasonic waves}	
-				\begin{itemize}
-					\item Frequency range: 2 MHz - 200 MHz
-					\item Wavelength \(\lambda << h\) thickness 
-					\item shorter wavelengths
-				\end{itemize}
-				\textbf{Guided waves}	
-				\begin{itemize}
-					\item Typical frequency range: \\ 10 kHz - 1 MHz
-					\item Wavelength \(\lambda > h\) thickness 
-					\item longer wavelengths
-				\end{itemize}
-			\end{column}
-			\begin{column}[c]{0.6\textwidth}				
-				\textbf{Ultrasonic testing} \hspace{50pt} \textbf{Guided wave testing}
-				\begin{figure}
-					\includegraphics[width=0.95\textwidth]{local_ultrasonic.png}
-				\end{figure}
-			\end{column}		
-		\end{columns}	
-	\end{frame}
-	\note{
-		\tiny
-		Many conventional methods have been used for a long time in the industry for damage inspection, such as visual inspection, Eddy current, dye penetration, acoustic emission, and local ultrasonic testing.
-		For the local ultrasonic testing, the frequency is in the range of 2 MHz–200 MHz, and the wavelength is way smaller than the thickness of the structure.
-		There are different methods for ultrasonic testing, such as:
-		pulse echo, in which we have a probe that generates ultrasonic waves that propagate through the thickness of a structure, and then the reflected waves from the bottom surface are captured by the same probe.
-		The other ultrasonic method is called the "through-transmission method."
-		There are two probes: one for transmitting on one side and the other for receiving on the other side.
-		As a result, these methods are local, but they have some drawbacks:
-		Labor-intensive, time-consuming, professional, and experienced personnel are required; complex structures may need to be disassembled.
-		On the other hand, guided wave testing is a promising global NDE solution for SHM.
-		The typical frequency range of guided waves is 10 kHz to 1 MHz, and their wavelength is larger than the thickness of the investigated structure.
-		Guided waves can be generated using a piezoelectric actuator and registered by an array of piezoelectric sensors. 
-		Alternatively, the propagation of guided Lamb waves can be registered using a scanning laser Doppler vibrometer to produce a full wavefield scan.		 
-	}
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\section{Guided waves}
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\begin{frame}{Waves used in non-destructive testing}
-		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		Elastic wave propagation types depending on particle motion:
-		\begin{itemize}
-				\item  \alert{The longitudinal wave} is a compressional wave in which the particle motion is in the same direction as the propagation of the wave
-				\item \alert{The shear wave} is a wave motion in which the particle motion is perpendicular to the direction of the propagation
-				\item \alert{Surface (Rayleigh) waves} have an elliptical particle motion and travel across the surface of a material. Their velocity is approximately 90\% of the shear wave velocity of the material and their depth of penetration is approximately equal to one
-				wavelength
-				\item \alert{Plate (Lamb) waves} have a complex vibration occurring in materials where thickness is less than the wavelength of elastic wave introduced into it.
-			\end{itemize}
-	\end{frame}
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\setcounter{subfigure}{0}
-	\begin{frame}{Waves used in non-destructive testing}
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		\begin{figure}
-				\subfloat{\animategraphics[autoplay,loop, controls,width=0.5\textwidth]{10}{figures/gif_figs/Longitudinal_wave/Longitudinal_wave-}{0}{35}}
-				\caption{\alert{Longitudinal wave} - plane pressure pulse wave}
-			\end{figure}
-	\tiny 
-	(source: https://nojigon.webs.upv.es/index.php)
-	\end{frame}
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\setcounter{subfigure}{0}
-	\begin{frame}{Waves used in non-destructive testing}
-		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		\begin{columns}[T]
-				\begin{column}{0.5\textwidth}
-						\centering
-						\begin{figure}
-								\subfloat{\animategraphics[autoplay,loop, controls,width=0.95\textwidth]{10}{figures/gif_figs/SH_shear_wave/SH_shear-}{0}{39}}
-								\caption{\alert{Shear horizontal wave}}
-							\end{figure}			
-					\end{column}
-				\begin{column}{0.5\textwidth}
-						\centering
-						\begin{figure}
-								\subfloat{\animategraphics[autoplay,loop, controls,width=0.95\textwidth]{10}{figures/gif_figs/SV_shear_wave/SV_shear-}{0}{39}}
-								\caption{\alert{Shear vertical wave}}
-							\end{figure}			
-					\end{column}	
-			\end{columns}
-	\tiny 
-	(source: https://nojigon.webs.upv.es/index.php)
-	\end{frame}
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\setcounter{subfigure}{0}
-	\begin{frame}{Waves used in non-destructive testing}
-		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		\begin{figure}
-				\centering
-				\subfloat{\animategraphics[autoplay,loop, controls,height=0.65\textheight]{15}{figures/gif_figs/Raileigh_wave/Raileigh_wave-}{0}{67}}
-				\caption{\alert{Rayleigh waves}}		
-			\end{figure}			
-	\tiny 
-	(source: https://nojigon.webs.upv.es/index.php)
-	\end{frame}
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\setcounter{subfigure}{0}
-	\begin{frame}{Waves used in non-destructive testing}
-		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		\begin{figure}			
-				\centering
-				\subfloat{\animategraphics[autoplay,loop, controls,height=0.65\textheight]{20}{figures/gif_figs/love_wave/love_wave-}{0}{107}}
-				\caption{\alert{Love waves} (surface seismic waves) named after Augustus Edward Hough Love}		
-			\end{figure}			
-	\tiny 
-	(source: https://nojigon.webs.upv.es/index.php)
-	\end{frame}
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\setcounter{subfigure}{0}
-	\begin{frame}{Lamb waves}
-		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		\begin{alertblock}{Lamb waves}	
-			Lamb waves are plane waves propagating in thin plates.\\
-			Shear vertical waves in conjunction with longitudinal P waves interacts with plate surfaces resulting in complex wave mechanism which leads to creation of Lamb waves.
-		\end{alertblock}
-%		Horace Lamb discovered these type of waves in 1917.
-%		He derived theory and dispersion relations.
-		\begin{columns}[T]
-			\begin{column}{0.5\textwidth}
-				\centering
-				symmetric modes
-				\begin{equation*}
-					\frac{\tan(q h)}{\tan(p h)} = -\frac{4 k^2 p q}{\left(q^2 - k^2\right)^2}
-				\end{equation*}
-			\end{column}
-			\begin{column}{0.5\textwidth}
-				\centering
-				antisymmetric modes
-				\begin{equation*}
-					\frac{\tan(q h)}{\tan(p h)} = -\frac{\left(q^2 - k^2\right)^2}{4 k^2 p q}
-				\end{equation*}
-			\end{column}	
-		\end{columns}	
-		\centering
-%		\(q=q(\omega,k), \quad p=p(\omega,k) \)
-		\begin{gather*}
-			\centering
-			p^2 = \frac{\omega^2}{c_{L}^2}-k^2,\ q^2 = \frac{\omega^2}{c_{S}^2}-k^2,\ k = \frac{2\pi}{\lambda},\ f=\frac{\omega}{2\pi}
-		\end{gather*}
-		\newline
-		\begin{gather*}
-			\centering
-			c_L=\sqrt{\frac{2\mu (1-\nu)}{\rho(1-2\nu)}},\ c_S=\sqrt{\frac{\mu}{\rho}}
-		\end{gather*}
-	\end{frame}
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\note{
-		Lamb waves are a subset of guided waves that propagate between two parallel surfaces, such as in shell and plate structures discovered by Horace Lamb in 1917.
-		
-		Lamb waves can be separated into symmetric modes and antisymmetric modes in terms of the surface particle motion to the mid-plane, which are described in characteristic Lamb wave equations:
-		
-		
-		where $h$ is the half-thickness of the plate, $k$ is the wavenumber, $\omega$ is the angular frequency, and $\lambda$ is the wavelength. 
-		\(cL\) and \(cS\) are the velocities of longitudinal and transverse
-		waves, respectively.
-		
-		where \(\rho\) is the density, \(\mu\) is the shear modulus, and \(\nu\) is Poisson's ratio of the medium.
-	}
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\setcounter{subfigure}{0}
-	\begin{frame}{Lamb waves modes}
-		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		\begin{columns}[T]
-			\begin{column}{0.3\textwidth}
-				\centering
-				\begin{figure}
-					\animategraphics[autoplay,loop,width=1\textwidth]{10}{figures/gif_figs/S0_mode/S0_mode-}{0}{67}
-					\caption{Fundamental symmetric, S0, \alert{Lamb wave} mode (in-plane motion)}
-				\end{figure}
-			\end{column}
-			\begin{column}{0.3\textwidth}
-				\centering
-				\begin{figure}
-					\animategraphics[autoplay,loop,width=1\textwidth]{10}{figures/gif_figs/A0_mode/A0_mode-}{0}{67}
-					\caption{Fundamental antisymmetric, A0, \alert{Lamb wave} mode (out-of-plane motion)}
-				\end{figure}
-			\end{column}
-			\hfill
-			\begin{column}{0.37\textwidth}
-					\begin{itemize}
-						\item \textcolor{blue}{Travel within guides for long distances}
-						\item \textcolor{blue}{Can propagate in complex structures}
-%						\item \textcolor{blue}{High speeds in metals and composites}
-						\item \textcolor{blue}{Can be automated using software}
-					\end{itemize}
-					\textbf{Lamb waves are a promising global NDE solution for SHM}
-			\end{column}
-		\end{columns}	
-		\tiny 
-		(source: https://nojigon.webs.upv.es/index.php)
-	\end{frame}
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\note{
-		The animation on the left shows the fundamental symmetric \(S_0\) mode of the Lamb wave.
-		
-		We can see the in-plane motion of the particles.
-		Whereas the second animation shows the fundamental antisymmetric \(A_0\) mode of the Lamb wave.
-		We can see the out-of-plane motion of the particles.
-		
-		Furthermore, Lamb wave has some good characteristics that make it a promising solution for SHM as it:\\
-		1. Can travel within guides for long distances. \\
-		2. Can propagate in complex structures. \\
-%		3. Has high speed in metals and composites.\\ 	
-	}
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	
-%	\begin{frame}{Dispersion curves of Lamb waves}
-%		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%		\begin{figure}
-%			\only<1>{
-%				\includegraphics[width=0.8\textwidth]{/figs/Fig_1_12.png}	
-%			}
-%			\only<2>{
-%				\includegraphics[width=0.8\textwidth]{/figs/Fig_1_13.png}	
-%			}
-%		\end{figure}
-%	\end{frame}
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	
-	%%%%
 	\setcounter{subfigure}{0}
 	\section{Artificial intelligence, machine learning, and deep learning}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -719,10 +498,12 @@
 				\end{itemize}
 			\end{column}
 			\begin{column}[t]{.55\textwidth}
-				\begin{figure}[t]
-					\centering
-					\animategraphics[autoplay,loop,width =1.0\textwidth]{1}{figures/gif_figs/BP/png/BP_technique_}{0}{14}
-				\end{figure}
+				\begin{block}{Backpropagation}
+					\begin{figure}[t]
+						\centering
+						\animategraphics[autoplay,loop,width =1.0\textwidth]{1}{figures/gif_figs/BP/png/BP_technique_}{0}{14}
+					\end{figure}
+				\end{block}
 			\end{column}
 		\end{columns}		
 	\end{frame}
@@ -771,6 +552,74 @@
 	}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\setcounter{subfigure}{0}
+	\begin{frame}{Recurrent Neural Networks (RNNs)}
+		\begin{columns}[T]
+			\begin{column}[c]{0.4\textwidth}
+				\begin{itemize}
+					\item RNNs are a type of neural network specifically designed to handle sequential data.
+					\item They have connections between the hidden units that form a directed cycle, allowing information to persist.
+					\item RNNs are widely used in natural language processing, speech recognition, time series analysis, etc.
+				\end{itemize}
+			\end{column}
+			\begin{column}[c]{0.55\textwidth}
+				\begin{block}{RNN}
+					\begin{figure}
+						\includegraphics[width=0.95\textwidth]{unrolled_rnn.png}
+					\end{figure}
+				\end{block}				
+			\end{column}
+		\end{columns}
+	\end{frame}
+	\note{}
+	\setcounter{subfigure}{0}
+	\begin{frame}{Long Short Term Memory (LSTM)}
+		\begin{columns}[T]
+			\begin{column}[c]{0.45\textwidth}
+				\begin{itemize}
+					\item LSTM is an advanced variant of RNNs that addresses the vanishing gradient problem.
+					\item It introduces memory cells, input gates, forget gates, and output gates to regulate information flow.
+					\item LSTM can selectively retain or discard information, allowing long-term dependencies to be learned effectively.
+				\end{itemize}
+			\end{column}
+			\begin{column}[c]{0.55\textwidth}
+				\begin{block}{LSTM}
+					\begin{figure}
+						\includegraphics[width=0.65\textwidth]{lstm.png}
+					\end{figure}
+				\begin{columns}
+					\begin{column}[c]{0.45\textwidth}
+						\begin{itemize}
+							\item \alert{Memory Cell}
+							\item \alert{Input Gate}
+						\end{itemize}
+					\end{column}
+					\begin{column}[c]{0.45\textwidth}
+						\begin{itemize}					
+							\item \alert{Forget Gate}
+							\item \alert{Output Gate}
+						\end{itemize}
+					\end{column}
+				\end{columns}					
+				\end{block}				
+			\end{column}
+		\end{columns}
+	\end{frame}
+	\note{
+		Advantages of LSTM:
+		\begin{itemize}
+			\item LSTM can capture long-term dependencies in sequences.
+			\item It has been successfully applied to various tasks like language modelling, speech recognition, machine translation, etc.
+			\item LSTM is capable of processing inputs of varying length.
+			\item It can learn and remember relevant information while ignoring irrelevant information.			
+		\end{itemize}
+	\begin{itemize}
+		\item \alert{Memory Cell}: Stores information over time.
+		\item \alert{Input Gate}: Controls the flow of new information into the memory cell.
+		\item \alert{Forget Gate}: Controls the flow of old information out of the memory cell.
+		\item \alert{Output Gate}: Controls the flow of information from the memory cell to the output.
+	\end{itemize}
+	}
+	\setcounter{subfigure}{0}
 	\begin{frame}{Encoder-decoder (Autoencoder)}
 		\begin{columns}[T]
 			\begin{column}[t]{.35\textwidth}
@@ -797,7 +646,7 @@
 	}
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\begin{frame}{Developing a deep learning model}
+	\begin{frame}{Things to keep in mind!}
 		When developing a supervised deep learning model, there are several important considerations to keep in mind:
 		\begin{itemize}
 			\item Sufficient and Representative Training Data
@@ -836,9 +685,217 @@
 		Remember that deep learning models can be complex and require significant computational resources and expertise to develop effectively. It's crucial to iterate, experiment, and fine-tune your model based on empirical observations and domain knowledge to achieve the desired performance.}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\setcounter{subfigure}{0}
-	\section{Case study: Utilisation of AI for delamination identification in CFRP
+	\section{Case study: Utilisation of AI for delamination identification in CFRP}
+	%%%%%%%%%%%%%%%%%%%%
+	\begin{frame}{Ultrasonic testing (UT)} 
+		\begin{columns}[T]
+			\begin{column}[c]{0.38\textwidth}
+				\textbf{Ultrasonic waves}	
+				\begin{itemize}
+					\item Frequency range: 2 MHz - 200 MHz
+					\item Wavelength \(\lambda << h\) thickness 
+					\item shorter wavelengths
+				\end{itemize}
+				\textbf{Guided waves}	
+				\begin{itemize}
+					\item Typical frequency range: \\ 10 kHz - 1 MHz
+					\item Wavelength \(\lambda > h\) thickness 
+					\item longer wavelengths
+				\end{itemize}
+			\end{column}
+			\begin{column}[c]{0.6\textwidth}				
+				\textbf{Ultrasonic testing} \hspace{50pt} \textbf{Guided wave testing}
+				\begin{figure}
+					\includegraphics[width=0.95\textwidth]{local_ultrasonic.png}
+				\end{figure}
+			\end{column}		
+		\end{columns}	
+	\end{frame}
+	\note{
+		\tiny
+		Many conventional methods have been used for a long time in the industry for damage inspection, such as visual inspection, Eddy current, dye penetration, acoustic emission, and local ultrasonic testing.
+		For the local ultrasonic testing, the frequency is in the range of 2 MHz–200 MHz, and the wavelength is way smaller than the thickness of the structure.
+		There are different methods for ultrasonic testing, such as:
+		pulse echo, in which we have a probe that generates ultrasonic waves that propagate through the thickness of a structure, and then the reflected waves from the bottom surface are captured by the same probe.
+		The other ultrasonic method is called the "through-transmission method."
+		There are two probes: one for transmitting on one side and the other for receiving on the other side.
+		As a result, these methods are local, but they have some drawbacks:
+		Labor-intensive, time-consuming, professional, and experienced personnel are required; complex structures may need to be disassembled.
+		On the other hand, guided wave testing is a promising global NDE solution for SHM.
+		The typical frequency range of guided waves is 10 kHz to 1 MHz, and their wavelength is larger than the thickness of the investigated structure.
+		Guided waves can be generated using a piezoelectric actuator and registered by an array of piezoelectric sensors. 
+		Alternatively, the propagation of guided Lamb waves can be registered using a scanning laser Doppler vibrometer to produce a full wavefield scan.		 
 	}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section{Guided waves}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{frame}{Waves used in non-destructive testing}
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		Elastic wave propagation types depending on particle motion:
+		\begin{itemize}
+			\item  \alert{The longitudinal wave} is a compressional wave in which the particle motion is in the same direction as the propagation of the wave
+			\item \alert{The shear wave} is a wave motion in which the particle motion is perpendicular to the direction of the propagation
+			\item \alert{Surface (Rayleigh) waves} have an elliptical particle motion and travel across the surface of a material. Their velocity is approximately 90\% of the shear wave velocity of the material and their depth of penetration is approximately equal to one
+			wavelength
+			\item \alert{Plate (Lamb) waves} have a complex vibration occurring in materials where thickness is less than the wavelength of elastic wave introduced into it.
+		\end{itemize}
+	\end{frame}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\setcounter{subfigure}{0}
+	\begin{frame}{Waves used in non-destructive testing}
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\begin{figure}
+			\subfloat{\animategraphics[autoplay,loop, controls,width=0.5\textwidth]{10}{figures/gif_figs/Longitudinal_wave/Longitudinal_wave-}{0}{35}}
+			\caption{\alert{Longitudinal wave} - plane pressure pulse wave}
+		\end{figure}
+		\tiny 
+		(source: https://nojigon.webs.upv.es/index.php)
+	\end{frame}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\setcounter{subfigure}{0}
+	\begin{frame}{Waves used in non-destructive testing}
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\begin{columns}[T]
+			\begin{column}{0.5\textwidth}
+				\centering
+				\begin{figure}
+					\subfloat{\animategraphics[autoplay,loop, controls,width=0.95\textwidth]{10}{figures/gif_figs/SH_shear_wave/SH_shear-}{0}{39}}
+					\caption{\alert{Shear horizontal wave}}
+				\end{figure}			
+			\end{column}
+			\begin{column}{0.5\textwidth}
+				\centering
+				\begin{figure}
+					\subfloat{\animategraphics[autoplay,loop, controls,width=0.95\textwidth]{10}{figures/gif_figs/SV_shear_wave/SV_shear-}{0}{39}}
+					\caption{\alert{Shear vertical wave}}
+				\end{figure}			
+			\end{column}	
+		\end{columns}
+		\tiny 
+		(source: https://nojigon.webs.upv.es/index.php)
+	\end{frame}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\setcounter{subfigure}{0}
+	\begin{frame}{Waves used in non-destructive testing}
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\begin{figure}
+			\centering
+			\subfloat{\animategraphics[autoplay,loop, controls,height=0.65\textheight]{15}{figures/gif_figs/Raileigh_wave/Raileigh_wave-}{0}{67}}
+			\caption{\alert{Rayleigh waves}}		
+		\end{figure}			
+		\tiny 
+		(source: https://nojigon.webs.upv.es/index.php)
+	\end{frame}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\setcounter{subfigure}{0}
+%	\begin{frame}{Waves used in non-destructive testing}
+%		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%		\begin{figure}			
+%			\centering
+%			\subfloat{\animategraphics[autoplay,loop, controls,height=0.65\textheight]{20}{figures/gif_figs/love_wave/love_wave-}{0}{107}}
+%			\caption{\alert{Love waves} (surface seismic waves) named after Augustus Edward Hough Love}		
+%		\end{figure}			
+%		\tiny 
+%		(source: https://nojigon.webs.upv.es/index.php)
+%	\end{frame}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\setcounter{subfigure}{0}
+	\begin{frame}{Lamb waves}
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\begin{alertblock}{Lamb waves}	
+			Lamb waves are plane waves propagating in thin plates.\\
+			Shear vertical waves in conjunction with longitudinal P waves interacts with plate surfaces resulting in complex wave mechanism which leads to creation of Lamb waves.
+		\end{alertblock}
+		%		Horace Lamb discovered these type of waves in 1917.
+		%		He derived theory and dispersion relations.
+		\begin{columns}[T]
+			\begin{column}{0.5\textwidth}
+				\centering
+				symmetric modes
+				\begin{equation*}
+					\frac{\tan(q h)}{\tan(p h)} = -\frac{4 k^2 p q}{\left(q^2 - k^2\right)^2}
+				\end{equation*}
+			\end{column}
+			\begin{column}{0.5\textwidth}
+				\centering
+				antisymmetric modes
+				\begin{equation*}
+					\frac{\tan(q h)}{\tan(p h)} = -\frac{\left(q^2 - k^2\right)^2}{4 k^2 p q}
+				\end{equation*}
+			\end{column}	
+		\end{columns}	
+		\centering
+		%		\(q=q(\omega,k), \quad p=p(\omega,k) \)
+		\begin{gather*}
+			\centering
+			p^2 = \frac{\omega^2}{c_{L}^2}-k^2,\ q^2 = \frac{\omega^2}{c_{S}^2}-k^2,\ k = \frac{2\pi}{\lambda},\ f=\frac{\omega}{2\pi}
+		\end{gather*}
+		\newline
+		\begin{gather*}
+			\centering
+			c_L=\sqrt{\frac{2\mu (1-\nu)}{\rho(1-2\nu)}},\ c_S=\sqrt{\frac{\mu}{\rho}}
+		\end{gather*}
+	\end{frame}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\note{
+		Lamb waves are a subset of guided waves that propagate between two parallel surfaces, such as in shell and plate structures discovered by Horace Lamb in 1917.
+		
+		Lamb waves can be separated into symmetric modes and antisymmetric modes in terms of the surface particle motion to the mid-plane, which are described in characteristic Lamb wave equations:
+		
+		
+		where $h$ is the half-thickness of the plate, $k$ is the wavenumber, $\omega$ is the angular frequency, and $\lambda$ is the wavelength. 
+		\(cL\) and \(cS\) are the velocities of longitudinal and transverse
+		waves, respectively.
+		
+		where \(\rho\) is the density, \(\mu\) is the shear modulus, and \(\nu\) is Poisson's ratio of the medium.
+	}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\setcounter{subfigure}{0}
+	\begin{frame}{Lamb waves modes}
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\begin{columns}[T]
+			\begin{column}{0.3\textwidth}
+				\centering
+				\begin{figure}
+					\animategraphics[autoplay,loop,width=1\textwidth]{10}{figures/gif_figs/S0_mode/S0_mode-}{0}{67}
+					\caption{Fundamental symmetric, S0, \alert{Lamb wave} mode (in-plane motion)}
+				\end{figure}
+			\end{column}
+			\begin{column}{0.3\textwidth}
+				\centering
+				\begin{figure}
+					\animategraphics[autoplay,loop,width=1\textwidth]{10}{figures/gif_figs/A0_mode/A0_mode-}{0}{67}
+					\caption{Fundamental antisymmetric, A0, \alert{Lamb wave} mode (out-of-plane motion)}
+				\end{figure}
+			\end{column}
+			\hfill
+			\begin{column}{0.37\textwidth}
+				\begin{itemize}
+					\item \textcolor{blue}{Travel within guides for long distances}
+					\item \textcolor{blue}{Can propagate in complex structures}
+					%						\item \textcolor{blue}{High speeds in metals and composites}
+					\item \textcolor{blue}{Can be automated using software}
+				\end{itemize}
+				\textbf{Lamb waves are a promising global NDE solution for SHM}
+			\end{column}
+		\end{columns}	
+		\tiny 
+		(source: https://nojigon.webs.upv.es/index.php)
+	\end{frame}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\note{
+		The animation on the left shows the fundamental symmetric \(S_0\) mode of the Lamb wave.
+		
+		We can see the in-plane motion of the particles.
+		Whereas the second animation shows the fundamental antisymmetric \(A_0\) mode of the Lamb wave.
+		We can see the out-of-plane motion of the particles.
+		
+		Furthermore, Lamb wave has some good characteristics that make it a promising solution for SHM as it:\\
+		1. Can travel within guides for long distances. \\
+		2. Can propagate in complex structures. \\
+	}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\setcounter{subfigure}{0}
 	\begin{frame}{Computer vision}
 		\begin{columns}[T]
