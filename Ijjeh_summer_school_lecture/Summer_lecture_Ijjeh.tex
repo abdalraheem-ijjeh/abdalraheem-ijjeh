@@ -3,17 +3,18 @@
 %\graphicspath{{../../figures/}}
 
 %\includeonlyframes{frame1,frame2,frame3}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\documentclass{beamer}
+%\usepackage{geometry}
+%\geometry{a4paper, portrait}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Packages
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{appendixnumberbeamer}
 \usepackage{booktabs}
 \usepackage{csvsimple} % for csv read
-%\usepackage[scale=2]{ccicons}
 \usepackage{pgfplots}
 \usepackage{xspace}
-%\usepackage{amsmath}
 \usepackage{totcount}
 \usepackage{tikz}
 \usepackage{bm}
@@ -23,7 +24,6 @@
 \usepackage{animate,media9}
 \usepackage{subfig}
 \usepackage{fancybox}
-%\usepackage{multimedia}
 \usepackage{dashbox}
 \usepackage{tcolorbox}
 \usepackage{multicol}
@@ -34,6 +34,8 @@
 \usepackage{comment}
 \usepackage{mathtools}% Loads amsmath
 \usepackage{movie15}
+%\usepackage{subfigure}
+\usepackage{beamerthemesplit}
 
 %\usepackage[export]{adjustbox}
 %\usepackage{background}
@@ -82,7 +84,7 @@
 \newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
 
 %\usepackage{pgfpages}
-%\setbeameroption{show notes}
+%\setbeameroption{show only notes}
 %\setbeameroption{show notes on second screen=left}
 %\setbeamertemplate{note page}{\insertnote}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -98,16 +100,22 @@
 % Background for the first frame
 \setbeamertemplate{background}{%
 	\ifnum\value{framenumber}=0%
-	\includegraphics[width=\paperwidth,height=\paperheight]{figures/AI_BG_2.jpg}%
+	\includegraphics[width=\paperwidth,height=\paperheight]{AI_BG_2.jpg}%
 	\fi%
 }
 
 
-%\subtitle{In preparation for a Ph.D. defence}
+\subtitle{}
 \author{\textbf{Abdalraheem A. Ijjeh }} 
 % logo align to Institute 
 \institute{Postdoc at GRVC Robotics Laboratory \\
-	 University of Seville, Spain}
+	 University of Seville, Spain
+	 \vfill
+	 \vfill
+     \includegraphics[width=2cm]{logo_grvc-removebg-preview.png}
+     \vspace{25pt}
+     \includegraphics[width=6cm]{imp_logo.png}	
+  }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\tikzexternalize % activate!
@@ -120,9 +128,11 @@
 	\maketitle
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\note{
+		Hello everyone, and welcome.
 		My name is Abdalraheem Ijjeh.
-		The title of my PhD thesis is FEASIBILITY STUDY OF ARTIFICIAL INTELLIGENCE APPROACH FOR DELAMINATION IDENTIFICATION IN COMPOSITE LAMINATES.		
-		Thank you all for you attending my PhD defence presentation. 
+		This course will be an introduction to the artificial intelligence approaches utilised in structural health monitoring and non destructive testing. 
+		I have recently completed my PhD at the IFFM, PAS, and my supervisor during my PhD was Professor Pawel Kudela.
+		Currently, I am a post doc at the GRVC robotics lab in Spain.
 	}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -137,17 +147,16 @@
 		\end{multicols}
 	\end{frame}	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\note{The presentation will be as follows: 
-		In the first section, I will briefly talk about the motivations behind this research.	
-		Then I will state my objectives in the second section. 
-		In sections three and four, I will talk briefly about nondestructive testing methods, and guided waves. 
-		In section five, I will present the conventional approach v.s. the deep learning approach for damage detection. 
-		Section six will be an introduction to the supervised deep learning approach and how it works in general. 
-		The generation of the synthetic dataset used for training will be presented in section seven. 
-		In section 8, I will present the developed deep-learning models for damage identification. 
-		The evaluation of the developed models will be presented in sections nine and ten.
-		The super-resolution deep learning model developed for fast data acquisition will be presented in section 11. 
-		Finally, the conclusions will be presented in section 12.
+	\note{The course  will be as follows: 
+		In the first section, I will briefly talk about Structural health monitoring and non destructive testing.	
+		Then, in the second section we will talk about artificial intelligence, machine learning and deep learning technologies.
+		In section three, we will see how to utilise AI approaches for anomaly detection.
+		And then, we will go little bit into basics of deep learning.
+		In section Four, I will present a case study of utilising artificial intelligence for delamination identification in composite materials.
+		Hence, we will talk briefly about guided waves (Lamb waves).
+		And how the synthetic dataset was generated in order to train DL models 
+		Next, I will present the developed deep-learning models for damage identification and their evaluation. 
+		Finally, the conclusions will be presented in section 5.
 	}
 %	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %	\section{Motivation}
@@ -279,17 +288,16 @@
 	\end{frame}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\note{
-		Artificial intelligence (AI) refers to the development of computer systems or machines that can perform tasks that typically require human intelligence. It is a broad field of study and encompasses various subfields, including machine learning, natural language processing, computer vision, robotics, and more.
+		Artificial Intelligence (AI), Machine Learning (ML), and Deep Learning (DL) are related concepts within the field of computer science. Here's a brief explanation of each:
 		
-		AI systems aim to simulate and replicate human cognitive functions, such as perception, reasoning, learning, problem-solving, and decision-making. These systems can analyze and interpret complex data, recognize patterns, make predictions, understand natural language, and interact with humans and their environment.
+		Artificial Intelligence (AI): AI refers to the development of computer systems that can perform tasks that typically require human intelligence. It encompasses a wide range of techniques and methodologies that enable machines to perceive, reason, learn, and make decisions. AI systems aim to simulate human intelligence and exhibit behaviours like problem-solving, speech recognition, image understanding, and decision-making.
 		
-		AI techniques can be categorized into two main types:
+		Machine Learning (ML): Machine Learning is a subset of AI that focuses on enabling machines to learn and improve from experience without being explicitly programmed. Instead of relying on explicit instructions, ML algorithms learn patterns and insights from data and make predictions or take actions based on that learning. ML algorithms can automatically identify and learn from patterns, relationships, and trends within large datasets, enabling them to make accurate predictions or perform specific tasks.
 		
-		Narrow AI: Also known as weak AI, narrow AI focuses on specific tasks and is designed to perform well in a limited domain. Examples of narrow AI include virtual personal assistants (such as Siri or Alexa), recommendation systems, image or speech recognition systems, and autonomous vehicles.
+		Deep Learning (DL): Deep Learning is a subfield of Machine Learning that is inspired by the structure and function of the human brain's neural networks. It involves the use of artificial neural networks with multiple layers (deep neural networks) to learn and extract complex representations of data. DL algorithms are particularly effective at processing and understanding large amounts of unstructured data, such as images, videos, text, and audio. Deep Learning has achieved remarkable success in tasks like image and speech recognition, natural language processing, and more.
 		
-		General AI: General AI refers to highly autonomous systems that possess the ability to understand, learn, and perform any intellectual task that a human being can do. General AI aims to have a level of intelligence that is comparable to or surpasses human intelligence across various domains. However, the development of true general AI is still a subject of ongoing research and remains a future goal.
-		
-		AI has numerous applications across various industries, including healthcare, finance, transportation, education, manufacturing, and entertainment. It has the potential to revolutionize many aspects of our lives, driving advancements in automation, personalized services, data analysis, and decision support.}
+		In summary, Artificial Intelligence is a broad field that encompasses the development of intelligent systems, while Machine Learning is a subset of AI that focuses on enabling machines to learn from data. Deep Learning, in turn, is a specialized technique within Machine Learning that leverages deep neural networks to process and understand complex data representations.
+	}
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\setcounter{subfigure}{0}
@@ -314,6 +322,22 @@
 			\end{column}
 		\end{columns}		
 	\end{frame}
+	\note{
+		AI and deep learning have gained significant attention and popularity in recent years due to several key factors:
+		
+		Increased Computing Power: The advancement of computer hardware, particularly in terms of processing power and parallel computing capabilities, has enabled the efficient training and deployment of complex AI models. Deep learning algorithms, which are computationally intensive, have greatly benefited from these advancements, allowing for faster and more accurate model training.
+		
+		Big Data Availability: The proliferation of digital technologies and the internet has generated massive amounts of data across various domains. Deep learning models excel at leveraging large datasets to extract meaningful patterns and insights. With the availability of big data, AI and deep learning have been able to demonstrate their potential in solving complex problems and making accurate predictions.
+		
+		Breakthroughs in Research: Researchers and practitioners have made significant advancements in AI and deep learning techniques, introducing novel algorithms and architectures that have achieved impressive results across various domains. Notable breakthroughs, such as the development of convolutional neural networks (CNNs) for image recognition and recurrent neural networks (RNNs) for natural language processing, have fueled the growth and adoption of deep learning.
+		
+		Practical Applications and Industry Adoption: AI and deep learning have demonstrated their effectiveness and potential in solving real-world problems across multiple industries. Applications include image and speech recognition, natural language processing, recommendation systems, autonomous vehicles, healthcare diagnostics, and more. These practical applications have garnered significant interest and investment from businesses, driving the demand for AI and deep learning technologies.
+		
+		Open-Source Frameworks and Tools: The availability of open-source deep learning frameworks like TensorFlow, PyTorch, and Keras has democratized access to AI and deep learning capabilities. These frameworks provide developers and researchers with powerful tools to build and experiment with complex models, fostering innovation and collaboration within the AI community.
+		
+		
+		Collectively, these factors have contributed to the current "hot" status of AI and deep learning, with widespread interest, research advancements, industry adoption, and transformative applications across diverse fields.
+	}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\setcounter{subfigure}{0}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -356,7 +380,8 @@
 		\end{figure}
 	\end{frame}
 	\note{
-		Feature extraction is a crucial step in machine learning and pattern recognition tasks. It involves transforming raw data into a representative set of features that capture relevant information for the given problem. Here are some commonly used techniques for feature extraction:
+		Feature extraction is a crucial step in machine learning and pattern recognition tasks. It involves transforming raw data into a representative set of features that capture relevant information for the given problem. 
+		Here are some commonly used techniques for feature extraction:
 		
 		Statistical Features: Statistical measures such as mean, median, standard deviation, skewness, and kurtosis can capture important characteristics of the data distribution.
 		
@@ -391,20 +416,6 @@
 		Hierarchical Clustering
 		DBSCAN (Density-Based Spatial Clustering of Applications with Noise)
 		Gaussian Mixture Models (GMM)
-		Ensemble Methods: Ensemble methods combine multiple classifiers to improve the overall classification performance. Popular ensemble techniques include:
-		
-		Bagging (Bootstrap Aggregating)
-		Boosting (e.g., AdaBoost, Gradient Boosting)
-		Random Forests
-		Deep Learning: Deep learning approaches, particularly deep neural networks, have gained significant popularity in recent years for feature classification tasks. Deep neural networks can learn complex feature representations directly from raw data, leading to state-of-the-art performance in various domains. Some commonly used deep learning architectures for classification include:
-		
-		Convolutional Neural Networks (CNN)
-		Recurrent Neural Networks (RNN)
-		Long Short-Term Memory (LSTM) Networks
-		Transformer Networks
-		Dimensionality Reduction: Dimensionality reduction techniques can be used as a preprocessing step to reduce the number of features while retaining the most informative ones. Techniques like Principal Component Analysis (PCA) and t-SNE (t-Distributed Stochastic Neighbor Embedding) can help improve classification performance by reducing the feature space.
-		
-		Transfer Learning: Transfer learning leverages pre-trained models trained on large-scale datasets and fine-tunes them on a specific classification task with limited data. This approach is particularly useful when labeled data is scarce. Pre-trained models like VGG, ResNet, and BERT are often used in transfer learning.
 		
 		The choice of classification technique depends on various factors, including the nature of the data, the number of classes, the availability of labeled data, the desired computational efficiency, and the desired interpretability of the model. It often requires experimentation and tuning to determine the most suitable technique for a given classification task.
 	}
@@ -416,7 +427,7 @@
 			\item Lack of Scalability
 			\item Lack of Adaptability to Changing Data
 			\item Limited Representation Learning
-			\item Interpretability	
+%			\item Interpretability	
 		\end{itemize}
 	\end{frame}
 
@@ -436,7 +447,6 @@
 		
 		Limited Representation Learning: Traditional machine learning algorithms often struggle to automatically learn meaningful representations from raw data. They heavily rely on handcrafted features, which can be suboptimal or fail to capture the intricacies of complex patterns in the data.
 		
-		Interpretability: While interpretability is not always a drawback, some conventional methods, such as deep neural networks, can be difficult to interpret. Understanding the inner workings of these models and explaining their decisions to stakeholders can be challenging, limiting their usability in certain domains.
 		
 		It's important to note that while conventional machine learning methods have their limitations, they have been successfully applied in numerous domains and continue to be valuable in many practical applications. However, newer approaches, such as deep learning and other advancements in artificial intelligence, have emerged to address some of these drawbacks and push the boundaries of what is achievable with machine learning.
 	
@@ -456,6 +466,24 @@
 			\includegraphics[width=.95\textwidth]{DL_approach.png}
 		\end{figure}
 	\end{frame}
+	\note{The end-to-end approach in deep learning refers to a modeling paradigm where a single, unified neural network is trained to directly map raw input data to desired output predictions or actions, without relying on explicit intermediate representations or hand-engineered features.
+		
+		Traditionally, in many machine learning pipelines, multiple stages of processing are involved, such as data preprocessing, feature extraction, and model building. These stages often require domain-specific knowledge and expert feature engineering. In contrast, the end-to-end approach aims to automate this process by allowing the deep neural network to learn representations and features directly from the raw input data.
+		
+		Here are some key characteristics of the end-to-end approach:
+		
+		Raw Input to Output Mapping: The end-to-end approach involves training a deep neural network to learn a direct mapping from raw input data (such as images, audio, text) to desired output predictions or actions (such as object recognition, speech transcription, language translation). The network takes raw data as input and produces the desired output without explicit feature engineering or preprocessing steps.
+		
+		Automatic Feature Learning: With the end-to-end approach, the deep neural network learns to extract relevant features and representations from the raw input data during the training process. This eliminates the need for manual feature engineering, as the network automatically discovers and learns useful representations that are relevant for the given task.
+		
+		Complex Mapping and Hierarchical Representations: Deep neural networks excel at learning complex and hierarchical representations from data. By utilizing multiple layers of interconnected nodes (neurons), these networks can capture and learn intricate patterns and relationships in the data. The end-to-end approach leverages the power of deep learning models to handle high-dimensional and complex input data and learn the appropriate representations for the given task.
+		
+		Simplicity and Integration: The end-to-end approach simplifies the overall modeling pipeline by removing the need for separate stages of feature extraction and preprocessing. It allows for a more seamless integration of data processing and model training, potentially reducing the complexity of the overall system and making it easier to develop end-to-end solutions.
+		
+		While the end-to-end approach offers benefits such as reduced reliance on domain expertise and streamlined development, it may also pose challenges in cases where fine-grained control, or understanding of intermediate steps is necessary. 
+		Nevertheless, in many domains, the end-to-end approach has shown promising results and has been successfully applied to a wide range of tasks, including computer vision, natural language processing, and speech recognition.}
+	
+	\subsection{A dive into DL}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\begin{frame}{Artificial neural networks (ANNs)}
 		\begin{columns}[T]
@@ -487,51 +515,94 @@
 			\end{column}
 		\end{columns}
 	\end{frame}
+	\note{
+	
+	An Artificial Neural Network (ANN) is a computational model inspired by the structure and function of biological neural networks, such as the human brain. 
+	It consists of interconnected artificial neurons, also called nodes or units, organized in layers. 
+	Each node receives inputs, performs computations, and produces an output that is passed to other nodes.
+	
+	The equation for a simple artificial neuron, often referred to as a perceptron, can be represented as follows:
+	
+	Here's a breakdown of the components in the equation:
+	
+	Weighted Sum: The inputs to the neuron are multiplied by corresponding weights. 
+	These weights represent the strength or importance of each input. The weighted sum is calculated by adding the products of the inputs and their respective weights.
+	
+	Bias: A bias term is added to the weighted sum. 
+	The bias provides the flexibility to shift the activation function's output and helps the neural network account for situations where all inputs are zero or when a non-zero output is desired.
+	
+	Activation Function: The weighted sum plus bias is passed through an activation function, which introduces non-linearity into the output of the neuron. 
+	The activation function determines whether the neuron is "activated" or not based on the calculated value. 
+	It adds complexity and non-linear behavior to the neural network, enabling it to model more complex relationships in the data.
+	
+	Output: The output of the neuron is the result of the activation function applied to the weighted sum plus bias. It is typically the input to other neurons in the network or the final output of the network itself.
+	
+	This equation is the basic building block of an artificial neural network, and it is applied to each neuron in the network's layers. 
+	By adjusting the weights and biases during the training process, the network can learn to make accurate predictions or perform specific tasks based on the given inputs.
+	
+	Note that the equation described above represents a simplified version of an artificial neuron. 
+	In practice, there are various types of activation functions, network architectures, and learning algorithms used in neural networks, such as multilayer perceptrons (MLPs), convolutional neural networks (CNNs), recurrent neural networks (RNNs), and more, each with their own equations and variations.	
+}
 	\setcounter{subfigure}{0}
 	\begin{frame}{Optimization and Deep Learning}
 		\begin{columns}[T]
-			\begin{column}[t]{.4\textwidth}
+			\begin{column}[c]{.5\textwidth}
 				\begin{itemize}
-					\item \alert{Labelled data} $\rightarrow$ (input data has labels/ground truths)
-					\item \alert{Loss function} $\rightarrow$ measures error between predicted and the ground truth values
-					\item \alert{Learnable parameters} $\rightarrow$ updated during the backpropagation step (optimization e.g. Gradient descent )					
+					\item \alert{Labelled data} 
+					\item \alert{Loss function}
+					\item \alert{Learnable parameters}
 				\end{itemize}
-			\end{column}
-			\begin{column}[t]{.55\textwidth}
 				\begin{block}{Backpropagation}
-					\begin{figure}[t]
+					\begin{figure}
 						\centering
 						\animategraphics[autoplay,loop,width =1.0\textwidth]{1}{figures/gif_figs/BP/png/BP_technique_}{0}{14}
 					\end{figure}
 				\end{block}
 			\end{column}
+			\begin{column}[t]{.5\textwidth}
+				\centering
+				\includegraphics[height=0.40\textheight]{Gradient_decent.png}
+				\\
+				\includegraphics[height=0.40\textheight]{local_minima.png}
+			\end{column}
 		\end{columns}		
 	\end{frame}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\note{			
-		In this work, I used the supervised approach, which means that the input data is labelled.
+		The optimization process in deep learning refers to the training of a neural network model to find the optimal set of weights and biases that minimize the discrepancy between the predicted outputs and the desired outputs for a given training dataset. 
+		This process involves iteratively adjusting the model's parameters using an optimization algorithm.
 		
-		Accordingly, the idea of supervised learning is to learn a model of how to map the inputs to the outputs.
+		Here's an overview of the optimization process in deep learning:
 		
-		Initially, when we start training the deep learning model, all learnable parameters, such as weights and biases, start with random values.
-		These learnable parameters are updated during the training phase.
-		Now, in the forward pass, we feed the data into the model, and it flows through the layers until we get the predicted output.
-		Here, we need an objective loss function to estimate the loss (error) between the predicted output and the ground truth.
+		Loss Function: The first step is to define a loss function, also known as an objective or cost function. The loss function measures the discrepancy between the predicted outputs of the model and the true values in the training data. The choice of the loss function depends on the specific task at hand, such as mean squared error (MSE) for regression problems or cross-entropy loss for classification problems.
 		
-		A well-known optimization algorithm is a gradient descent, which aims to reduce the loss at each step to reach the global minimum value by calculating the gradient and then pushing back the calculated gradients across all the neurons in a technique called backpropagation.
+		Initialization: The model's weights and biases are initialized with random values. Proper initialization is important to avoid the model getting stuck in poor local optima that  is a point in the parameter space where the objective function reaches the lowest value within a local neighborhood. 
+		It means that compared to other nearby points, the local optimum has a lower value of the objective function. However, it does not guarantee that it is the global minimum, which is the absolute lowest point in the entire parameter space..
 		
-		Accordingly, all learnable parameters are updated, which leads to minimizing the loss value.
+		Forward Propagation: During the forward propagation step, input data is fed into the model, and it performs computations and generates predictions using the current set of parameters. The predicted outputs are compared with the true outputs using the chosen loss function.
+		
+		Backward Propagation (Backpropagation): Backpropagation is a key component of training deep neural networks. It involves calculating the gradients of the loss function with respect to the model's parameters (weights and biases). This process starts from the output layer and moves backward through the layers, using the chain rule of calculus to efficiently compute the gradients layer by layer.
+		
+		Parameter Update: With the gradients computed, an optimization algorithm is used to update the model's parameters. The most commonly used optimization algorithm is Stochastic Gradient Descent (SGD) and its variants. These algorithms adjust the weights and biases in a way that moves the model parameters in the direction that reduces the loss function.
+		
+		Iterations: Steps 3-5 (forward propagation, backward propagation, and parameter update) are repeated iteratively for a certain number of epochs or until convergence. Each iteration helps to refine the model's parameters and reduce the loss. The training process continues until the model reaches a satisfactory level of accuracy or until a stopping criterion is met.
+		
+		Validation and Testing: Once the training is complete, the model's performance is evaluated using a separate validation set or held-out test set. This evaluation provides insights into the model's generalization and helps to assess its performance on unseen data.
+		
+		The optimization process in deep learning is computationally intensive and often requires powerful hardware and efficient implementations. Various techniques and improvements have been developed to enhance optimization, such as learning rate schedules, regularization techniques (e.g., dropout, weight decay), and advanced optimization algorithms (e.g., Adam, RMSprop).
+		
+		By iteratively adjusting the model's parameters through the optimization process, deep learning models can effectively learn complex patterns and representations in the data, leading to improved performance on various tasks.
 	}
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\begin{frame}{Convolution Neural Networks (CNNs)}
-		\noindent Convolutional Neural Network (CNN) is one of the most utilised architectures in DL for image processing as they can \alert{recognise complex patterns} of images by performing \alert{convolution operations}.
+		\noindent CNN is one of the most utilised architectures in DL for  \alert{recognising complex patterns} by performing .
 		
 		Convolution in DL is a cross-correlation operation \alert{(sliding dot product)}. \\
 		The kernel weights \alert{(learnable weights)} are updated during training phase.
 		\begin{figure}[t]
 			\centering
-			\animategraphics[autoplay,loop,width =1.0\textwidth]{1}{figures/gif_figs/files/plot_convolution_process_}{0}{32}
+			\animategraphics[autoplay,loop,width =0.95\textwidth]{1}{figures/gif_figs/files/plot_convolution_process_}{0}{32}
 		\end{figure}
 	\end{frame}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -546,15 +617,47 @@
 		Consequently, kernels learn to detect different types of edges
 		(vertical, horizontal, and diagonal edges), colour intensities, etc.	
 		
-		%		Typically, when we train a CNN model, the kernel weights are initialised randomly.
-		
 		During the backpropagation process, all kernel weights are updated. 				
 	}
+	\begin{frame}{CNN architecture}
+		\begin{columns}[T]
+			\begin{column}[c]{0.7\textwidth}
+				\begin{block}{CNN}
+					\begin{figure}
+						\centering
+						\includegraphics[width=0.9\textwidth]{cnn_ann.png}
+					\end{figure}
+				\end{block}
+			\end{column}
+		\begin{column}[c]{0.3\textwidth}
+			\begin{block}{Downsampling}
+					\begin{figure}
+						\includegraphics[width=0.5\textwidth]{downsampling.png}
+					\end{figure}
+				\end{block}
+			\end{column}
+		\end{columns}
+	\end{frame}
+	\note{
+		The general architecture of a Convolutional Neural Network (CNN) consists of multiple layers designed to effectively process and extract features from input data, such as images. Here is an overview of the typical layers and their role in a CNN:
+		
+		Input Layer: The input layer receives the raw input data, which is usually an image or a collection of images. The input data is typically represented as a 3D tensor with dimensions (height, width, channels), where channels refer to the color channels (e.g., red, green, blue) of an image.
+		
+		Convolutional Layers: Convolutional layers are the key components of a CNN. They consist of filters or kernels that convolve over the input data to perform feature extraction. Each filter performs a set of mathematical operations (convolution) on a small receptive field of the input, producing a feature map that highlights specific patterns or features present in the input. Multiple filters are used to extract different features. The convolutional layers are responsible for learning hierarchical representations of the input data.
+		
+		Pooling Layers: Pooling layers (e.g., Max Pooling, Average Pooling) reduce the spatial dimensions of the feature maps obtained from the convolutional layers. They achieve this by downsampling and summarizing the information within local regions of the feature maps. Pooling helps to extract the most salient features while reducing the computational burden and making the model more robust to variations in the input.
+		
+		Fully Connected Layers: After several convolutional and pooling layers, the feature maps are flattened into a 1D vector and passed to fully connected layers. These layers connect every neuron in one layer to every neuron in the subsequent layer. Fully connected layers learn high-level representations by combining the low-level features extracted by the earlier layers. The output of the final fully connected layer is typically fed into a softmax or sigmoid activation function to produce the network's predictions or class probabilities.
+		
+		Output Layer: The output layer produces the final predictions or outputs of the CNN. The number of neurons in the output layer depends on the specific task. For example, in image classification, the output layer might have neurons corresponding to the number of classes to predict.
+		
+		This general architecture, often referred to as a "vanilla" CNN, can be customized and extended in various ways to suit different tasks and improve performance. Variants of CNNs, such as architectures with skip connections (e.g., ResNet), inception modules (e.g., GoogLeNet), or recurrent connections (e.g., ConvLSTM), have been developed to address specific challenges and achieve state-of-the-art results in tasks like image classification, object detection, and semantic segmentation.}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\setcounter{subfigure}{0}
 	\begin{frame}{Recurrent Neural Networks (RNNs)}
 		\begin{columns}[T]
 			\begin{column}[c]{0.4\textwidth}
+				\justifying
 				\begin{itemize}
 					\item RNNs are a type of neural network specifically designed to handle sequential data.
 					\item They have connections between the hidden units that form a directed cycle, allowing information to persist.
@@ -570,11 +673,30 @@
 			\end{column}
 		\end{columns}
 	\end{frame}
-	\note{}
+	\note{
+		A Recurrent Neural Network (RNN) is a type of neural network designed to process sequential data by maintaining and utilizing an internal memory or hidden state. Unlike feedforward neural networks, which process each input independently, RNNs can capture information from previous inputs and use it to influence the current prediction or output.
+		
+		The key feature of RNNs is their ability to handle input sequences of varying lengths. They achieve this by maintaining a hidden state that gets updated at each time step and serves as a memory of the past inputs. The hidden state is passed along through time, allowing the network to capture dependencies and temporal information in the data.
+		
+		Here are the main components and characteristics of an RNN:
+		
+		Hidden State: The hidden state is a vector that captures the network's memory of past inputs. It is updated at each time step based on the current input and the previous hidden state. The hidden state acts as a representation of the sequence history and is shared across all time steps, allowing the RNN to process sequential information.
+		
+		Recurrent Connections: RNNs have recurrent connections that enable information to flow from one time step to the next. These connections allow the hidden state to carry information about past inputs and influence future predictions. The recurrent connections make RNNs well-suited for tasks that require sequential processing, such as natural language processing, speech recognition, and time series analysis.
+		
+		Time Steps: RNNs operate over a series of time steps, with each time step corresponding to an element in the input sequence. At each time step, the RNN takes an input and updates its hidden state based on the current input and the previous hidden state. This iterative process continues until the entire sequence has been processed.
+		
+		Training and Backpropagation Through Time (BPTT): RNNs are trained using a variant of backpropagation called Backpropagation Through Time (BPTT). BPTT unfolds the recurrent connections of the network through time, allowing the gradients to flow back from the output to the earlier time steps. This enables the network to learn from the entire sequence and adjust its parameters to minimize the error between predicted and target outputs.
+		
+		Types of RNNs: There are different types of RNN architectures, including the basic RNN, Long Short-Term Memory (LSTM), and Gated Recurrent Unit (GRU). LSTM and GRU are popular variations of RNNs that address the vanishing gradient problem and allow for more effective handling of long-term dependencies.
+		
+		RNNs have demonstrated success in tasks involving sequential data, such as language modeling, machine translation, speech recognition, sentiment analysis, and time series forecasting. However, they can face challenges in capturing long-term dependencies or handling very long sequences due to limitations like vanishing or exploding gradients. More advanced architectures, such as attention mechanisms and Transformer models, have been developed to overcome these limitations and achieve improved performance on sequence-related tasks.
+	}
 	\setcounter{subfigure}{0}
 	\begin{frame}{Long Short Term Memory (LSTM)}
 		\begin{columns}[T]
 			\begin{column}[c]{0.45\textwidth}
+				\justifying
 				\begin{itemize}
 					\item LSTM is an advanced variant of RNNs that addresses the vanishing gradient problem.
 					\item It introduces memory cells, input gates, forget gates, and output gates to regulate information flow.
@@ -685,50 +807,79 @@
 		Remember that deep learning models can be complex and require significant computational resources and expertise to develop effectively. It's crucial to iterate, experiment, and fine-tune your model based on empirical observations and domain knowledge to achieve the desired performance.}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\setcounter{subfigure}{0}
-	\section{Case study: Utilisation of AI for delamination identification in CFRP}
-	%%%%%%%%%%%%%%%%%%%%
-	\begin{frame}{Ultrasonic testing (UT)} 
+	\section{Case study: Delamination identification in CFRP}
+	\subsection{An overview of guided waves}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	\begin{frame}{Motivations}
+%		\begin{columns}[T]
+%			\begin{column}[t]{.55\textwidth}
+%				\begin{figure}[t]
+%					%					\centering
+%					%					\subfloat{\includegraphics[width=.7\textwidth]{Composite_advantages.png}}					
+%					%					\\
+%					\subfloat{\includegraphics[width=.85\textwidth]{delaminated_plate1.jpg}}
+%				\end{figure}
+%				\begin{tcolorbox}
+%					\justifying\noindent\alert{Delamination detection} in its early stages can significantly help avoiding catastrophic events.
+%				\end{tcolorbox}				
+%			\end{column}
+%			\begin{column}[t]{0.45\textwidth}
+%				\begin{figure}[t]
+%					\includegraphics[width=1\textwidth]{Crashes.png}
+%				\end{figure}
+%				\tiny {source: https://www.structuresinsider.com/post/the-difference-between-buckling-compression-shear}
+%			\end{column}
+%		\end{columns}
+%	\end{frame}
+%	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	\note
+%	{
+%		Composite laminates have a wide range of applications in various industries due to their good characteristics, such as:
+%		high strength, low density, light weight, and resistance to fatigue and corrosion, among others.
+%		
+%		However, composite laminates may encounter some defects, such as cracks, fibre breakage, and debonding.
+%		
+%		In particular, composite laminates are more sensitive to damage in the form of delamination due to weak transverse tensile and interlaminar shear strengths.
+%		
+%		Therefore, delaminations can seriously decrease the performance of composite structures.
+%		Accordingly, delamination detection in its early stages can significantly help to avoid catastrophic structural collapses.
+%	}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{frame}{Defects in composite laminates}
+		\small
+		Composite laminates can have different types of damage such as: \\
+		\textbf{Cracks, fibre breakage, debonding, and \alert{delamination}.} \\ 
 		\begin{columns}[T]
-			\begin{column}[c]{0.38\textwidth}
-				\textbf{Ultrasonic waves}	
+			\begin{column}[c]{0.5\textwidth}
 				\begin{itemize}
-					\item Frequency range: 2 MHz - 200 MHz
-					\item Wavelength \(\lambda << h\) thickness 
-					\item shorter wavelengths
-				\end{itemize}
-				\textbf{Guided waves}	
-				\begin{itemize}
-					\item Typical frequency range: \\ 10 kHz - 1 MHz
-					\item Wavelength \(\lambda > h\) thickness 
-					\item longer wavelengths
+					\footnotesize
+					\item Delamination is a critical failure mechanism in laminated fibre-reinforced polymer matrix composites.
+					\item Delamination is one of the most hazardous forms of the defects. 
+					It leads to very catastrophic failures if not detected at early stages.
+					\item Delamination can be invisible from the outside.
 				\end{itemize}
 			\end{column}
-			\begin{column}[c]{0.6\textwidth}				
-				\textbf{Ultrasonic testing} \hspace{50pt} \textbf{Guided wave testing}
+			\begin{column}[c]{0.45\textwidth}
 				\begin{figure}
-					\includegraphics[width=0.95\textwidth]{local_ultrasonic.png}
+					\subfloat{\includegraphics[width=.95\textwidth]{delaminated_plate1.jpg}}
 				\end{figure}
-			\end{column}		
-		\end{columns}	
+			\end{column}
+		\end{columns}
+		\begin{tcolorbox}
+			\justifying\noindent\alert{Delamination detection} in its early stages can significantly help avoiding catastrophic events.
+		\end{tcolorbox}
 	\end{frame}
 	\note{
-		\tiny
-		Many conventional methods have been used for a long time in the industry for damage inspection, such as visual inspection, Eddy current, dye penetration, acoustic emission, and local ultrasonic testing.
-		For the local ultrasonic testing, the frequency is in the range of 2 MHz–200 MHz, and the wavelength is way smaller than the thickness of the structure.
-		There are different methods for ultrasonic testing, such as:
-		pulse echo, in which we have a probe that generates ultrasonic waves that propagate through the thickness of a structure, and then the reflected waves from the bottom surface are captured by the same probe.
-		The other ultrasonic method is called the "through-transmission method."
-		There are two probes: one for transmitting on one side and the other for receiving on the other side.
-		As a result, these methods are local, but they have some drawbacks:
-		Labor-intensive, time-consuming, professional, and experienced personnel are required; complex structures may need to be disassembled.
-		On the other hand, guided wave testing is a promising global NDE solution for SHM.
-		The typical frequency range of guided waves is 10 kHz to 1 MHz, and their wavelength is larger than the thickness of the investigated structure.
-		Guided waves can be generated using a piezoelectric actuator and registered by an array of piezoelectric sensors. 
-		Alternatively, the propagation of guided Lamb waves can be registered using a scanning laser Doppler vibrometer to produce a full wavefield scan.		 
+		Composite laminates have a wide range of applications in various industries due to their good characteristics, such as:
+		high strength, low density, light weight, and resistance to fatigue and corrosion, among others.
+		
+		However, composite laminates may encounter some defects, such as cracks, fibre breakage, and debonding.
+		
+		In particular, composite laminates are more sensitive to damage in the form of delamination due to weak transverse tensile and interlaminar shear strengths.
+		
+		Therefore, delaminations can seriously decrease the performance of composite structures.
+		Accordingly, delamination detection in its early stages can significantly help to avoid catastrophic structural collapses.	
 	}
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\section{Guided waves}
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\begin{frame}{Waves used in non-destructive testing}
 		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 		Elastic wave propagation types depending on particle motion:
@@ -741,54 +892,52 @@
 		\end{itemize}
 	\end{frame}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\setcounter{subfigure}{0}
-	\begin{frame}{Waves used in non-destructive testing}
-		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		\begin{figure}
-			\subfloat{\animategraphics[autoplay,loop, controls,width=0.5\textwidth]{10}{figures/gif_figs/Longitudinal_wave/Longitudinal_wave-}{0}{35}}
-			\caption{\alert{Longitudinal wave} - plane pressure pulse wave}
-		\end{figure}
-		\tiny 
-		(source: https://nojigon.webs.upv.es/index.php)
-	\end{frame}
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	\setcounter{subfigure}{0}
+%	\begin{frame}{Waves used in non-destructive testing Cont.}
+%		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%		\begin{figure}
+%			\subfloat{\animategraphics[autoplay,loop, controls,width=0.5\textwidth]{10}{figures/gif_figs/Longitudinal_wave/Longitudinal_wave-}{0}{35}}
+%			\caption{\alert{Longitudinal wave} - plane pressure pulse wave}
+%		\end{figure}
+%		\tiny 
+%		(source: https://nojigon.webs.upv.es/index.php)
+%	\end{frame}
+%	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	\setcounter{subfigure}{0}
+%	\begin{frame}{Waves used in non-destructive testing Cont.}
+%		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%		\begin{columns}[T]
+%			\begin{column}[c]{0.32\textwidth}
+%				\centering
+%				\begin{figure}
+%					\subfloat{\animategraphics[autoplay,loop, controls,width=0.95\textwidth]{10}{figures/gif_figs/SH_shear_wave/SH_shear-}{0}{39}}
+%					\caption{\alert{Shear horizontal wave}}
+%				\end{figure}			
+%			\end{column}
+%			\begin{column}[c]{0.32\textwidth}
+%				\centering
+%				\begin{figure}
+%					\subfloat{\animategraphics[autoplay,loop, controls,width=0.95\textwidth]{10}{figures/gif_figs/SV_shear_wave/SV_shear-}{0}{39}}
+%					\caption{\alert{Shear vertical wave}}
+%				\end{figure}			
+%			\end{column}
+%			\begin{column}[c]{0.32\textwidth}
+%				\centering
+%				\begin{figure}
+%					\centering
+%					\subfloat{\animategraphics[autoplay,loop, controls,width=0.95\textwidth]{15}{figures/gif_figs/Raileigh_wave/Raileigh_wave-}{0}{67}}
+%					\caption{\alert{Rayleigh waves}}		
+%				\end{figure}
+%			\end{column}	
+%		\end{columns}
+%		\tiny 
+%		(source: https://nojigon.webs.upv.es/index.php)
+%	\end{frame}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\setcounter{subfigure}{0}
-	\begin{frame}{Waves used in non-destructive testing}
-		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		\begin{columns}[T]
-			\begin{column}{0.5\textwidth}
-				\centering
-				\begin{figure}
-					\subfloat{\animategraphics[autoplay,loop, controls,width=0.95\textwidth]{10}{figures/gif_figs/SH_shear_wave/SH_shear-}{0}{39}}
-					\caption{\alert{Shear horizontal wave}}
-				\end{figure}			
-			\end{column}
-			\begin{column}{0.5\textwidth}
-				\centering
-				\begin{figure}
-					\subfloat{\animategraphics[autoplay,loop, controls,width=0.95\textwidth]{10}{figures/gif_figs/SV_shear_wave/SV_shear-}{0}{39}}
-					\caption{\alert{Shear vertical wave}}
-				\end{figure}			
-			\end{column}	
-		\end{columns}
-		\tiny 
-		(source: https://nojigon.webs.upv.es/index.php)
-	\end{frame}
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\setcounter{subfigure}{0}
-	\begin{frame}{Waves used in non-destructive testing}
-		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		\begin{figure}
-			\centering
-			\subfloat{\animategraphics[autoplay,loop, controls,height=0.65\textheight]{15}{figures/gif_figs/Raileigh_wave/Raileigh_wave-}{0}{67}}
-			\caption{\alert{Rayleigh waves}}		
-		\end{figure}			
-		\tiny 
-		(source: https://nojigon.webs.upv.es/index.php)
-	\end{frame}
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\setcounter{subfigure}{0}
+%	\setcounter{subfigure}{0}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	\setcounter{subfigure}{0}
 %	\begin{frame}{Waves used in non-destructive testing}
 %		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %		\begin{figure}			
@@ -801,55 +950,59 @@
 %	\end{frame}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\setcounter{subfigure}{0}
-	\begin{frame}{Lamb waves}
-		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		\begin{alertblock}{Lamb waves}	
-			Lamb waves are plane waves propagating in thin plates.\\
-			Shear vertical waves in conjunction with longitudinal P waves interacts with plate surfaces resulting in complex wave mechanism which leads to creation of Lamb waves.
-		\end{alertblock}
-		%		Horace Lamb discovered these type of waves in 1917.
-		%		He derived theory and dispersion relations.
-		\begin{columns}[T]
-			\begin{column}{0.5\textwidth}
-				\centering
-				symmetric modes
-				\begin{equation*}
-					\frac{\tan(q h)}{\tan(p h)} = -\frac{4 k^2 p q}{\left(q^2 - k^2\right)^2}
-				\end{equation*}
-			\end{column}
-			\begin{column}{0.5\textwidth}
-				\centering
-				antisymmetric modes
-				\begin{equation*}
-					\frac{\tan(q h)}{\tan(p h)} = -\frac{\left(q^2 - k^2\right)^2}{4 k^2 p q}
-				\end{equation*}
-			\end{column}	
-		\end{columns}	
-		\centering
-		%		\(q=q(\omega,k), \quad p=p(\omega,k) \)
-		\begin{gather*}
-			\centering
-			p^2 = \frac{\omega^2}{c_{L}^2}-k^2,\ q^2 = \frac{\omega^2}{c_{S}^2}-k^2,\ k = \frac{2\pi}{\lambda},\ f=\frac{\omega}{2\pi}
-		\end{gather*}
-		\newline
-		\begin{gather*}
-			\centering
-			c_L=\sqrt{\frac{2\mu (1-\nu)}{\rho(1-2\nu)}},\ c_S=\sqrt{\frac{\mu}{\rho}}
-		\end{gather*}
-	\end{frame}
+%	\begin{frame}{Lamb waves}
+%		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%		\begin{alertblock}{Lamb waves}	
+%			Lamb waves are plane waves propagating in thin plates.\\
+%			Shear vertical waves in conjunction with longitudinal P waves interacts with plate surfaces resulting in complex wave mechanism which leads to creation of Lamb waves.
+%		\end{alertblock}
+%		%		Horace Lamb discovered these type of waves in 1917.
+%		%		He derived theory and dispersion relations.
+%		\begin{columns}[T]
+%			\begin{column}{0.5\textwidth}
+%				\centering
+%				symmetric modes
+%				\begin{equation*}
+%					\frac{\tan(q h)}{\tan(p h)} = -\frac{4 k^2 p q}{\left(q^2 - k^2\right)^2}
+%				\end{equation*}
+%			\end{column}
+%			\begin{column}{0.5\textwidth}
+%				\centering
+%				antisymmetric modes
+%				\begin{equation*}
+%					\frac{\tan(q h)}{\tan(p h)} = -\frac{\left(q^2 - k^2\right)^2}{4 k^2 p q}
+%				\end{equation*}
+%			\end{column}	
+%		\end{columns}	
+%		\centering
+%		%		\(q=q(\omega,k), \quad p=p(\omega,k) \)
+%		\begin{gather*}
+%			\centering
+%			p^2 = \frac{\omega^2}{c_{L}^2}-k^2,\ q^2 = \frac{\omega^2}{c_{S}^2}-k^2,\ k = \frac{2\pi}{\lambda},\ f=\frac{\omega}{2\pi}
+%		\end{gather*}
+%		\newline
+%		\begin{gather*}
+%			\centering
+%			c_L=\sqrt{\frac{2\mu (1-\nu)}{\rho(1-2\nu)}},\ c_S=\sqrt{\frac{\mu}{\rho}}
+%		\end{gather*}
+%	\end{frame}
+%	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	\note{
+%		Lamb waves are a subset of guided waves that propagate between two parallel surfaces, such as in shell and plate structures discovered by Horace Lamb in 1917.
+%		
+%		Lamb waves are plane waves propagating in thin plates.\\
+%		Shear vertical waves in conjunction with longitudinal P waves interacts with plate surfaces resulting in complex wave mechanism which leads to creation of Lamb waves.
+%		
+%		Lamb waves can be separated into symmetric modes and antisymmetric modes in terms of the surface particle motion to the mid-plane, which are described in characteristic Lamb wave equations:
+%		
+%		
+%		where $h$ is the half-thickness of the plate, $k$ is the wavenumber, $\omega$ is the angular frequency, and $\lambda$ is the wavelength. 
+%		\(cL\) and \(cS\) are the velocities of longitudinal and transverse
+%		waves, respectively.
+%		
+%		where \(\rho\) is the density, \(\mu\) is the shear modulus, and \(\nu\) is Poisson's ratio of the medium.
+%	}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\note{
-		Lamb waves are a subset of guided waves that propagate between two parallel surfaces, such as in shell and plate structures discovered by Horace Lamb in 1917.
-		
-		Lamb waves can be separated into symmetric modes and antisymmetric modes in terms of the surface particle motion to the mid-plane, which are described in characteristic Lamb wave equations:
-		
-		
-		where $h$ is the half-thickness of the plate, $k$ is the wavenumber, $\omega$ is the angular frequency, and $\lambda$ is the wavelength. 
-		\(cL\) and \(cS\) are the velocities of longitudinal and transverse
-		waves, respectively.
-		
-		where \(\rho\) is the density, \(\mu\) is the shear modulus, and \(\nu\) is Poisson's ratio of the medium.
-	}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\setcounter{subfigure}{0}
 	\begin{frame}{Lamb waves modes}
@@ -885,6 +1038,12 @@
 	\end{frame}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\note{
+		Lamb waves are a subset of guided waves that propagate between two parallel surfaces, such as in shell and plate structures discovered by Horace Lamb in 1917.
+		
+		Lamb waves are plane waves propagating in thin plates.\\
+		Shear vertical waves in conjunction with longitudinal P waves interacts with plate surfaces resulting in complex wave mechanism which leads to creation of Lamb waves.
+		
+		Lamb waves can be separated into symmetric modes and antisymmetric modes in terms of the surface particle motion to the mid-plane
 		The animation on the left shows the fundamental symmetric \(S_0\) mode of the Lamb wave.
 		
 		We can see the in-plane motion of the particles.
@@ -895,39 +1054,134 @@
 		1. Can travel within guides for long distances. \\
 		2. Can propagate in complex structures. \\
 	}
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\setcounter{subfigure}{0}
-	\begin{frame}{Computer vision}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\section*{Experimental measurements}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{frame}{Contact v.s. non-contact methods} 
 		\begin{columns}[T]
-			\begin{column}[c]{0.27\textwidth}
-				\justifying
-				\alert {\textbf{Computer vision}} is a field of AI that enables computers and systems to derive meaningful information from digital images, videos and other visual inputs. 
+			\begin{column}[c]{0.38\textwidth}
+				%				\textbf{Ultrasonic waves}	
+				%				\begin{itemize}
+					%					\item Frequency range: 2 MHz - 200 MHz
+					%					\item Wavelength \(\lambda << h\) thickness 
+					%					\item shorter wavelengths
+					%				\end{itemize}
+				\textbf{Guided waves}	
+				\begin{itemize}
+					\item Typical frequency range: \\ 10 kHz - 1 MHz
+					\item Wavelength \(\lambda > h\) thickness 
+					%					\item longer wavelengths
+				\end{itemize}
 			\end{column}
-			\quad
-			\begin{column}[c]{0.7\textwidth}
+			\begin{column}[c]{0.6\textwidth}				
+				\begin{figure}
+					\includegraphics[height=0.8\textheight]{local_ultrasonic.png}
+				\end{figure}
+			\end{column}		
+		\end{columns}	
+	\end{frame}
+	\note{
+		Many conventional methods have been used for a long time in the industry for damage inspection, such as visual inspection, Eddy current, dye penetration, acoustic emission, and local ultrasonic testing.
+		For the local ultrasonic testing, the frequency is in the range of 2 MHz–200 MHz, and the wavelength is way smaller than the thickness of the structure.
+		There are different methods for ultrasonic testing, such as:
+		pulse echo, in which we have a probe that generates ultrasonic waves that propagate through the thickness of a structure, and then the reflected waves from the bottom surface are captured by the same probe.
+		The other ultrasonic method is called the "through-transmission method."
+		There are two probes: one for transmitting on one side and the other for receiving on the other side.
+		As a result, these methods are local, but they have some drawbacks:
+		Labor-intensive, time-consuming, professional, and experienced personnel are required; complex structures may need to be disassembled.
+		On the other hand, guided wave testing is a promising global NDE solution for SHM.
+		The typical frequency range of guided waves is 10 kHz to 1 MHz, and their wavelength is larger than the thickness of the investigated structure.
+		Guided waves can be generated using a piezoelectric actuator and registered by an array of piezoelectric sensors. 
+		Alternatively, the propagation of guided Lamb waves can be registered using a scanning laser Doppler vibrometer to produce a full wavefield scan.		 
+	}
+	
+	\begin{frame}[t]{SLDV measurements: Setup}
+		\begin{columns}[T]
+			\column{0.5\textwidth}
+			\begin{figure}
+				\includegraphics[width=0.8\textwidth]{wibrometr-laserowy-1d_small-description.png}
+			\end{figure}
+			\column{0.5\textwidth}
+			\begin{enumerate}
+				\item Signal generator: TTI 1241 
+				\item Amplifier: Piezo Systems EPA-104-230 $\pm$200 Vp
+				\item Specimen
+				\item Scanning head: Polytec PSV-400
+				\item DAQ system: Polytec
+			\end{enumerate}
+		\end{columns}
+		{\small
+			Measurements were taken on a uniform grid of \textbf{333$\times$333 points}.\\
+			Excitation in the form of Hann windowed sine signal of carrier frequency \textbf{50 kHz} was applied to piezoelectric transducer.}
+		\end{frame}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\note
+	{
+		In this slide, I present the experimental setup for data acquisition.
+		
+		The specimen was excited using a Piezoelectric transducer placed at the centre of the plate.
+		
+		The scanning head is used to acquire the full wavefields of guided wave propagation from the bottom surface of the plate.	
+	}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{frame}[t]{Composite specimen}
+		\begin{columns}[T]
+			\begin{column}[c]{0.6\textwidth}
+				\begin{itemize}
+					\item 16 layers set at the same angle 
+					\item carbon: Prepreg GG 205 P (fibres Toray FT 300 - 3K 200 tex), $E=230$ GPa
+					\item epoxy resin: IMP503Z-HT by Impregnatex Compositi 						
+					\item density: 1522.4~kg/m\textsuperscript{3}
+					\item dimensions: 500$\times$500$\times$3.9 mm
+				\end{itemize}			
+			\end{column}
+			\begin{column}[c]{0.4\textwidth}
 				\begin{figure}
 					\centering
-					\includegraphics[width=1\textwidth]{computer_vision_tasks.png}
+					\includegraphics[width=.6\textwidth]{weave-1.jpg}
+					\caption{Plain weave fabric}
 				\end{figure}
-			\end{column}
+			\end{column}			
 		\end{columns}
 	\end{frame}
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\note{
-		We now reach an essential concept: computer vision. 
-		Computer vision is a subcategory of artificial intelligence that enables computers to obtain meaningful information from visual inputs.
+		The specimen used for experimental evaluation are carbon fibre reinforcement polymer (CFRP) composed of 16 layers of plain weave fabric with the following characteristics:
 		
-		Computer vision has three hierarchical levels: 
-		
-		The first level performs a classification for the whole input and predicts one output.
-		
-		The second level classifies and locates the object that we are looking for. 
-		
-		The ultimate level of computer vision is to perform Pixel-wise segmentation (or semantic segmentation), in which each pixel in the input image is classified into its corresponding class.	
-		
-		I am using pixel wise image segmentation in my PhD work.
-		
+		The specimen dimension is \(500 \times 500\)~mm with a thickness of 3.9~mm.
 	}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{frame}[t]{Specimens with defects}
+		\vspace{-0.5cm}
+		\begin{columns}[T]
+			\column{0.5\textwidth}
+			\begin{figure}
+				\includegraphics[width=0.9\textwidth]{plate_multi_delam_arrangement_large_fonts.png}
+			\end{figure}
+			\column{0.5\textwidth}
+			\begin{figure}
+				\includegraphics[width=0.75\textwidth]{plate_single_delam_arrangement_large_fonts.png}
+			\end{figure}
+		\end{columns}
+	\end{frame}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\note
+	{	
+		\footnotesize
+		The specifications of the CFRP specimens used for evaluating the developed deep-learning models are shown in this slide.
+		
+		Specimens with multiple delaminations are presented on the left.
+		In which there are three specimens with multiple delaminations located at the same distance from the centre of the plate, and placed at different thicknesses. 
+		
+		The figure on the right shows the specimen with a single delamination placed at the half thickness, and the total thickness of the specimen is 3.5 mm.
+		
+		Furthermore, all measurements with SLDV were conducted from the bottom surface of the plate.		
+	}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\subsection{Synthetic dataset generation}
 	
@@ -1035,7 +1289,37 @@
 		The ground truth label that represents the delamination location and shape is shown on the right.
 	}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Part I: Delamination identification}
+\subsection{Delamination identification in CFRP}
+	\setcounter{subfigure}{0}
+	\begin{frame}{Computer vision}
+	\begin{columns}[T]
+		\begin{column}[c]{0.27\textwidth}
+			\justifying
+			\alert {\textbf{Computer vision}} is a field of AI that enables computers and systems to derive meaningful information from digital images, videos and other visual inputs. 
+		\end{column}
+		\quad
+		\begin{column}[c]{0.7\textwidth}
+			\begin{figure}
+				\centering
+				\includegraphics[width=1\textwidth]{computer_vision_tasks.png}
+			\end{figure}
+		\end{column}
+	\end{columns}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\note{
+	We now reach an essential concept: computer vision. 
+	Computer vision is a subcategory of artificial intelligence that enables computers to obtain meaningful information from visual inputs.
+	
+	Computer vision has three hierarchical levels: 
+	
+	The first level performs a classification for the whole input and predicts one output.
+	
+	The second level classifies and locates the object that we are looking for. 
+	
+	The ultimate level of computer vision is to perform Pixel-wise segmentation (or semantic segmentation), in which each pixel in the input image is classified into its corresponding class.	
+	
+}
 \begin{frame}{Delamination identification approaches}
 	\begin{columns}[T]
 		\begin{column}[c]{0.47\textwidth}
@@ -1167,13 +1451,13 @@
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \note{
-	Here, I present the developed autoencoder-ConvLSTM model, which takes a sequence of consecutive full wavefield frames of guided wave propagation as an input.
+	Here, I present the developed Autoencoder-ConvLSTM model, which takes a sequence of consecutive full wavefield frames of guided wave propagation as an input.
 	
 	To reduce the training complexity, I used a certain number of frames after the initial interaction of guided waves with the damage, as the delamination location is known.
 	
 	These selected frames, which contain the required features regarding the delamination shape and location, are fed into an encoder-decoder model at once using a time-distributed layer.
 	
-	Then, the output of the decoder is forwarded into the ConvLSTM layer, which handles time series data by learning long-term spatiotemporal features.
+	Then, the output of the decoder is forwarded into the ConvLSTM layer, which handles time series data by learning long-term spatio-temporal features.
 	
 	For real-life situations where the damage location is unknown,  the full wavefield is tested through a sliding window that produces an intermediate output at a time.
 	Finally, the root-mean-square formula is applied to all intermediate predictions to obtain the RMS damage map.		
@@ -1365,7 +1649,7 @@
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \note{
-	In the following three slides, I will present three numerical samples evaluated with the autoencoder ConvLSTM model.
+	In the following three slides, I will present three numerical samples evaluated with the Autoencoder ConvLSTM model.
 	
 	Animation (a) shows the full wavefield of 512 frames as an input to the model.
 	Figure (b) shows the RMS damage map for all intermediate predictions,
@@ -1574,328 +1858,346 @@
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \setcounter{subfigure}{0}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Part II: Super-resolution image reconstruction}
-\begin{frame}{Super-resolution image reconstruction}
-	\begin{columns}[T]
-		\begin{column}[t]{0.6\textwidth}
-			\begin{alertblock}{Deep learning super-resolution model (DLSR)}					
-				\begin{footnotesize}
-					\justifying
-					\settowidth{\leftmargini}{\usebeamertemplate{itemize item}}
-					\addtolength{\leftmargini}{\labelsep}
-					\begin{itemize}
-						\item Registering HR full wavefield with an SLDV is a~time-consuming process.
-						\item DLSR model aims to recover HR full wavefield scans from a~LR measurements (below the Nyquist-Shannon sampling rate).
-					\end{itemize} 
-				\end{footnotesize}					
-			\end{alertblock}						
-			\begin{exampleblock}{Compressive sensing (CS) theory}
-				\footnotesize
-				\justifying
-				Any natural signal (\(x\)), e.g. (sounds, images) can be recovered using considerably fewer measurements (\(y\)) than standard methods.
-				\vfill
-				\begin{figure}[ht!]
-					\centering
-					\includegraphics[width=.45\textwidth]{matrix_mask.png}
-				\end{figure}
-			\end{exampleblock}							
-		\end{column}
-		\begin{column}[t]{0.4\textwidth}
-			\begin{figure}[ht!]
-				\centering
-				\includegraphics[width=1\textwidth]{superresolution_flowchart.png}
-			\end{figure}
-		\end{column}
-	\end{columns}		
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\note{
-	As mentioned earlier, the scanning laser Doppler vibrometer is a well-known non-contact tool for the acquisition of the full wavefield of propagating guided waves.
-	However, the process of acquiring the full wavefield of guided waves is time-consuming. 
-	One possible solution to tackle this problem is to acquire the Lamb waves at low-resolution grid points, and then the full wavefield can be reconstructed at high resolution.
-	Furthermore, I have compared my developed model of deep learning for super-resolution with the compressive sensing technique, which states that any signal can be reconstructed from a linear combination of random measurements.
-	To acquire the low-resolution measurements, I have used two types of masks, as shown in the figure: random and jitter.
-	The low-resolution measurements are far fewer than required by the Nyquist-Shannon sampling theory.
-}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\setcounter{subfigure}{0}
-\begin{frame}{Evaluation metrics for DLSR model}
-	For evaluating the reconstructed HR full wavefield:
-	\begin{itemize}
-		\item Peak signal-to-noise ratio (PSNR):
-		\begin{equation*}
-			PSNR=20\log_{10}\left(\frac{R}{\sqrt{MSE}}\right)
-			\label{PSNR_}
-		\end{equation*}			
-		\item Pearson correlation coefficient (also known as Pearson's r):
-		\begin{equation*}
-			r_{xy} = \frac{\sum_{i=1}^{n}(x_i - \bar{x})(y_i-\bar{y})}{\sqrt{\sum_{i=1}^{n}(x_i - \bar{x})^2}\sqrt{\sum_{i=1}^{n}(y_i - \bar{y})^2}}
-			\label{Pearson_}
-		\end{equation*}
-	\end{itemize}
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\note
-{
-	To evaluate the developed model, I used two metrics to measure the quality of the reconstructed high-resolution full wavefield frames:
-	\begin{itemize}
-		\item The first one is the peak signal-to-noise ratio (PSNR), which refers to the maximum possible power of a signal and the power of the distorting noise that affects the quality of its representation.
-		%			This equation depicts the mathematical representation of PSNR, where R is the maximum fluctuation value in the input image, and MSE is the mean squared error between the actual and predicted output.
-		%			
-		\item The second metric is the Pearson correlation coefficient (Pearson CC), which measures the linear relationship between two
-		variable sets \(X\) (represents the ground truth values) and \(Y\) (represents the predicted values) as shown in the below equation.
-		
-		%			Where \(n\) is the number of sample points,\(x_i, y_i\) are the individual value points representing the ground truth and predicted values, respectively, and \(\bar{x}\) and \(\bar{y}\) are the mean values of the sample and the prediction.
-	\end{itemize}
-}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\setcounter{subfigure}{0}
-\begin{frame}{Numerical test cases}
-	\begin{columns}[T]				
-		\begin{column}[c]{0.5\textwidth}				
-			\begin{figure}
-				\centering
-				%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-				%					\only<1>{
-					%						\begin{alertblock}{First test case}
-						%							\begin{figure}
-							%								\includegraphics[height=.35\textheight]{LR_456_frame_159_input.png}
-							%								\caption{LR input, $f_n=159$}
-							%							\end{figure}							
-						%							%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-						%							\begin{table}[!h]
-							%								\centering 
-							%								\footnotesize
-							%								\begin{tabular}{cccc}
-								%									\toprule
-								%									\multicolumn{2}{c}{plate} & \multicolumn{2}{c}{delamination} \\
-								%									\cmidrule(lr){1-2} \cmidrule(lr){3-4}
-								%									PSNR & PEARSON CC & PSNR & PEARSON CC \\ 
-								%									\midrule
-								%									42.95 & 0.999 & 33.02 & 0.993 \\					
-								%									\bottomrule
-								%								\end{tabular}
-							%							\end{table}
-						%						\end{alertblock}}
-				%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-				\only<1>{
-					\begin{alertblock}{First test case}
-						\begin{figure}
-							\includegraphics[height=.35\textheight]{LR_438_frame_154_input.png}
-							\caption{LR input, $f_n=154$}
-						\end{figure}							
-						%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-						\begin{table}[!h]
-							\centering 
-							\footnotesize
-							\begin{tabular}{cccc}
-								\toprule
-								\multicolumn{2}{c}{plate} & \multicolumn{2}{c}{delamination} \\
-								\cmidrule(lr){1-2} \cmidrule(lr){3-4}
-								PSNR & PEARSON CC & PSNR & PEARSON CC \\ 
-								\midrule
-								47.00 & 0.998 & 38.52 & 0.995 \\					
-								\bottomrule
-							\end{tabular}
-							\label{tab:num_DLSR_results_2_}
-						\end{table}	
-						%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-				\end{alertblock}}
-				%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-				\only<2>{
-					\begin{alertblock}{Second test case}
-						\begin{figure}
-							\includegraphics[height=.35\textheight]{LR_397_frame_127_input.png}
-							\caption{LR input, $f_n=127$}
-						\end{figure}						
-						%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-						\begin{table}[!h]
-							\centering 
-							\footnotesize	
-							\begin{tabular}{cccc}
-								\toprule
-								\multicolumn{2}{c}{plate} & \multicolumn{2}{c}{delamination} \\
-								\cmidrule(lr){1-2} \cmidrule(lr){3-4}
-								PSNR & PEARSON CC & PSNR & PEARSON CC \\ 
-								\midrule
-								48.60 & 0.998 & 46.67 & 0.998 \\					
-								\bottomrule
-							\end{tabular}
-						\end{table}
-						%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-				\end{alertblock}}
-				%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-			\end{figure}
-		\end{column}
-		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		\begin{column}[c]{0.5\textwidth}
-			%				\only<1>{	
-				%					\setcounter{subfigure}{0}
-				%					\begin{figure}
-					%						\subfloat[listentry][HR ref]{\includegraphics[height=.35\textheight]{output_456_frame_159_full_frame_GT.png}}\quad
-					%						\subfloat[listentry][DLSR]{\includegraphics[height=.35\textheight]{output_456_frame_159_full_frame_pred.png}}
-					%						\\
-					%						\subfloat[listentry][Ref]{\includegraphics[height=.35\textheight]{output_456_frame_159_delamination_GT.png}}\quad
-					%						\subfloat[listentry][DLSR]{\includegraphics[height=.35\textheight]{output_456_frame_159_delamination_pred.png}}
-					%					\end{figure}}			
-			\only<1>{
-				\setcounter{subfigure}{0}					
-				%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-				\begin{figure}
-					\subfloat[listentry][HR ref]{\includegraphics[height=.35\textheight]{output_438_frame_154_full_frame_GT.png}}\quad
-					\subfloat[listentry][DLSR]{\includegraphics[height=.35\textheight]{output_438_frame_154_full_frame_pred.png}}
-					\\
-					\subfloat[listentry][Ref]{\includegraphics[height=.35\textheight]{output_438_frame_154_delamination_GT.png}}\quad	
-					\subfloat[listentry][DLSR]{\includegraphics[height=.35\textheight]{output_438_frame_154_delamination_pred.png}}
-			\end{figure}}
-			\only<2>{	
-				\setcounter{subfigure}{0}
-				\begin{figure}
-					\centering
-					\subfloat[listentry][HR ref]{\includegraphics[height=.35\textheight]{output_397_frame_127_full_frame_GT.png}}\quad
-					\subfloat[listentry][DLSR]{\includegraphics[height=.35\textheight]{output_397_frame_127_full_frame_pred.png}}
-					\\
-					\subfloat[listentry][Ref]{\includegraphics[height=.35\textheight]{output_397_frame_127_delamination_GT.png}}\quad
-					\subfloat[listentry][DLSR]{\includegraphics[height=.35\textheight]{output_397_frame_127_delamination_pred.png}}
-			\end{figure}}
-		\end{column}
-	\end{columns}
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\note
-{
-	\footnotesize
-	In the following, the results of the reconstruction of HR frames for two numerical test cases will be presented.				
-	
-	In the first test case, the figure shows the low-resolution measurements at frame number 154.		
-	Figure a shows the actual HR frame, and figure b shows the predicted SR frame. 
-	The PSNR value is 47
-	
-	Figure c shows the HR sub-frame at the delamination region, figure d shows the SR prediction at the delamination region, and the PSNR is 38.52.
-	
-	In the second test case, the figure shows the low-resolution measurements at frame number 127.
-	Figure a shows the actual HR frame, and figure b shows the predicted SR frame. 
-	The PSNR value is 42.95
-	
-	Figure c shows the HR sub-frame at the delamination region, figure d shows the SR prediction at the delamination region, and the PSNR is 33.02.
-	
-	
-}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\setcounter{subfigure}{0}
-\begin{frame}{Experimental test case}		
-	\begin{columns}[T]
-		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		\begin{column}[t]{0.25\textwidth}				
-			\begin{figure}	
-				\centering					
-				\includegraphics[width=1\textwidth]{frame110_32x32.png}
-				%					\caption{LR input \((N_f = 110)\)}
-			\end{figure}
-			\footnotesize
-			LR measurements (Input): \(32\times32=1024\)p. \\
-			HR (Output): \(512\times512=262144\)p.
-		\end{column}
-		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		\begin{column}[t]{.25\textwidth}
-			\begin{block}{HR label}
-				\begin{figure}
-					\centering
-					\subfloat{\includegraphics[width=0.75\textwidth]{figure10a.png}}
-					\vfill
-					\subfloat{\includegraphics[width=0.75\textwidth]{figure11a.png}}
-				\end{figure}
-			\end{block}
-		\end{column}
-		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		\begin{column}[t]{.25\textwidth}
-			\begin{block}{CS: 1024p}
-				\begin{figure}
-					\centering
-					\subfloat{\includegraphics[width=0.75\textwidth]{figure10b.png}}
-					\vfill						
-					\subfloat{\includegraphics[width=0.75\textwidth]{figure11b.png}}
-				\end{figure}
-			\end{block}				
-		\end{column}
-		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		\begin{column}[t]{.25\textwidth}
-			\begin{alertblock}{DLSR}
-				\begin{figure}
-					\centering
-					\subfloat{\includegraphics[width=0.75\textwidth]{figure10e.png}}
-					\vfill			
-					\subfloat{\includegraphics[width=0.75\textwidth]{figure11e.png}}\quad
-				\end{figure}
-			\end{alertblock}				
-			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		\end{column}				
-	\end{columns}
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\note{
-	\footnotesize
-	In this slide, I present an experimental test case,
-	
-	The figure on the left represents an experimentally acquired full wavefield in it low resolution.	
-	
-	This Figure shows the actual HR reference frame for the whole plate and at the delamination area
-	
-	The figure in the middle represents the outputs of applying the compressive sensing technique in which it shows a poor quality of reconstruction. 
-	
-	
-	The figure on the right presents the reconstructed HR frame with the DLSR model for the whole plate and at the delamination area as you can see the quality of reconstruction is very noticeable. 
-}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Analysis of experimental case}
-	\begin{table}[!ht]
-		\renewcommand{\arraystretch}{1.3}
-		\centering \footnotesize
-		\caption{Quality metrics for tested methods.}	
-		\begin{tabular}{lrrrcrc} 
-			\toprule[1.5pt]
-			& & & \multicolumn{2}{c}{plate} & \multicolumn{2}{c}{delamination} \\
-			\cmidrule(lr){4-5} \cmidrule(lr){6-7}
-			Method & $N_p$ & CR [\%] & PSNR & PEARSON CC& PSNR & PEARSON CC \\
-			\midrule
-			\csvreader
-			[table head=\toprule,
-			late after line=\\ 
-			]{table_metrics.csv}{
-				1=\one, 2=\two, 3=\three, 4=\four, 5=\five, 6=\six, 7=\seven
-			}%
-			{\one & \two & \three & \four & \five & \six & \seven }%	
-			\bottomrule[1.5pt]
-		\end{tabular}	
-		\label{tab:csv_results_}
-	\end{table}
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\note{
-	The following table presents a detailed comparison of the quality metrics for CS methods with applied jitter and random masks and the DLSR model.
-	As shown in the table the DLSR model achieved the highest PSNR and Pearson CC values.		
-}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\subsection{Part II: Super-resolution image reconstruction}
+%\begin{frame}{Super-resolution image reconstruction}
+%	\begin{columns}[T]
+%		\begin{column}[t]{0.6\textwidth}
+%			\begin{alertblock}{Deep learning super-resolution model (DLSR)}					
+%				\begin{footnotesize}
+%					\justifying
+%					\settowidth{\leftmargini}{\usebeamertemplate{itemize item}}
+%					\addtolength{\leftmargini}{\labelsep}
+%					\begin{itemize}
+%						\item Registering HR full wavefield with an SLDV is a~time-consuming process.
+%						\item DLSR model aims to recover HR full wavefield scans from a~LR measurements (below the Nyquist-Shannon sampling rate).
+%					\end{itemize} 
+%				\end{footnotesize}					
+%			\end{alertblock}						
+%			\begin{exampleblock}{Compressive sensing (CS) theory}
+%				\footnotesize
+%				\justifying
+%				Any natural signal (\(x\)), e.g. (sounds, images) can be recovered using considerably fewer measurements (\(y\)) than standard methods.
+%				\vfill
+%				\begin{figure}[ht!]
+%					\centering
+%					\includegraphics[width=.45\textwidth]{matrix_mask.png}
+%				\end{figure}
+%			\end{exampleblock}							
+%		\end{column}
+%		\begin{column}[t]{0.4\textwidth}
+%			\begin{figure}[ht!]
+%				\centering
+%				\includegraphics[width=1\textwidth]{superresolution_flowchart.png}
+%			\end{figure}
+%		\end{column}
+%	\end{columns}		
+%\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\note{
+%	As mentioned earlier, the scanning laser Doppler vibrometer is a well-known non-contact tool for the acquisition of the full wavefield of propagating guided waves.
+%	However, the process of acquiring the full wavefield of guided waves is time-consuming. 
+%	One possible solution to tackle this problem is to acquire the Lamb waves at low-resolution grid points, and then the full wavefield can be reconstructed at high resolution.
+%	Furthermore, I have compared my developed model of deep learning for super-resolution with the compressive sensing technique, which states that any signal can be reconstructed from a linear combination of random measurements.
+%	To acquire the low-resolution measurements, I have used two types of masks, as shown in the figure: random and jitter.
+%	The low-resolution measurements are far fewer than required by the Nyquist-Shannon sampling theory.
+%}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\setcounter{subfigure}{0}
+%\begin{frame}{Evaluation metrics for DLSR model}
+%	For evaluating the reconstructed HR full wavefield:
+%	\begin{itemize}
+%		\item Peak signal-to-noise ratio (PSNR):
+%		\begin{equation*}
+%			PSNR=20\log_{10}\left(\frac{R}{\sqrt{MSE}}\right)
+%			\label{PSNR_}
+%		\end{equation*}			
+%		\item Pearson correlation coefficient (also known as Pearson's r):
+%		\begin{equation*}
+%			r_{xy} = \frac{\sum_{i=1}^{n}(x_i - \bar{x})(y_i-\bar{y})}{\sqrt{\sum_{i=1}^{n}(x_i - \bar{x})^2}\sqrt{\sum_{i=1}^{n}(y_i - \bar{y})^2}}
+%			\label{Pearson_}
+%		\end{equation*}
+%	\end{itemize}
+%\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\note
+%{
+%	To evaluate the developed model, I used two metrics to measure the quality of the reconstructed high-resolution full wavefield frames:
+%	\begin{itemize}
+%		\item The first one is the peak signal-to-noise ratio (PSNR), which refers to the maximum possible power of a signal and the power of the distorting noise that affects the quality of its representation.
+%		%			This equation depicts the mathematical representation of PSNR, where R is the maximum fluctuation value in the input image, and MSE is the mean squared error between the actual and predicted output.
+%		%			
+%		\item The second metric is the Pearson correlation coefficient (Pearson CC), which measures the linear relationship between two
+%		variable sets \(X\) (represents the ground truth values) and \(Y\) (represents the predicted values) as shown in the below equation.
+%		
+%		%			Where \(n\) is the number of sample points,\(x_i, y_i\) are the individual value points representing the ground truth and predicted values, respectively, and \(\bar{x}\) and \(\bar{y}\) are the mean values of the sample and the prediction.
+%	\end{itemize}
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\setcounter{subfigure}{0}
+%\begin{frame}{Numerical test cases}
+%	\begin{columns}[T]				
+%		\begin{column}[c]{0.5\textwidth}				
+%			\begin{figure}
+%				\centering
+%				%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%				%					\only<1>{
+%					%						\begin{alertblock}{First test case}
+%						%							\begin{figure}
+%							%								\includegraphics[height=.35\textheight]{LR_456_frame_159_input.png}
+%							%								\caption{LR input, $f_n=159$}
+%							%							\end{figure}							
+%						%							%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%						%							\begin{table}[!h]
+%							%								\centering 
+%							%								\footnotesize
+%							%								\begin{tabular}{cccc}
+%								%									\toprule
+%								%									\multicolumn{2}{c}{plate} & \multicolumn{2}{c}{delamination} \\
+%								%									\cmidrule(lr){1-2} \cmidrule(lr){3-4}
+%								%									PSNR & PEARSON CC & PSNR & PEARSON CC \\ 
+%								%									\midrule
+%								%									42.95 & 0.999 & 33.02 & 0.993 \\					
+%								%									\bottomrule
+%								%								\end{tabular}
+%							%							\end{table}
+%						%						\end{alertblock}}
+%				%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%				\only<1>{
+%					\begin{alertblock}{First test case}
+%						\begin{figure}
+%							\includegraphics[height=.35\textheight]{LR_438_frame_154_input.png}
+%							\caption{LR input, $f_n=154$}
+%						\end{figure}							
+%						%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%						\begin{table}[!h]
+%							\centering 
+%							\footnotesize
+%							\begin{tabular}{cccc}
+%								\toprule
+%								\multicolumn{2}{c}{plate} & \multicolumn{2}{c}{delamination} \\
+%								\cmidrule(lr){1-2} \cmidrule(lr){3-4}
+%								PSNR & PEARSON CC & PSNR & PEARSON CC \\ 
+%								\midrule
+%								47.00 & 0.998 & 38.52 & 0.995 \\					
+%								\bottomrule
+%							\end{tabular}
+%							\label{tab:num_DLSR_results_2_}
+%						\end{table}	
+%						%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%				\end{alertblock}}
+%				%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%				\only<2>{
+%					\begin{alertblock}{Second test case}
+%						\begin{figure}
+%							\includegraphics[height=.35\textheight]{LR_397_frame_127_input.png}
+%							\caption{LR input, $f_n=127$}
+%						\end{figure}						
+%						%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%						\begin{table}[!h]
+%							\centering 
+%							\footnotesize	
+%							\begin{tabular}{cccc}
+%								\toprule
+%								\multicolumn{2}{c}{plate} & \multicolumn{2}{c}{delamination} \\
+%								\cmidrule(lr){1-2} \cmidrule(lr){3-4}
+%								PSNR & PEARSON CC & PSNR & PEARSON CC \\ 
+%								\midrule
+%								48.60 & 0.998 & 46.67 & 0.998 \\					
+%								\bottomrule
+%							\end{tabular}
+%						\end{table}
+%						%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%				\end{alertblock}}
+%				%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%			\end{figure}
+%		\end{column}
+%		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%		\begin{column}[c]{0.5\textwidth}
+%			%				\only<1>{	
+%				%					\setcounter{subfigure}{0}
+%				%					\begin{figure}
+%					%						\subfloat[listentry][HR ref]{\includegraphics[height=.35\textheight]{output_456_frame_159_full_frame_GT.png}}\quad
+%					%						\subfloat[listentry][DLSR]{\includegraphics[height=.35\textheight]{output_456_frame_159_full_frame_pred.png}}
+%					%						\\
+%					%						\subfloat[listentry][Ref]{\includegraphics[height=.35\textheight]{output_456_frame_159_delamination_GT.png}}\quad
+%					%						\subfloat[listentry][DLSR]{\includegraphics[height=.35\textheight]{output_456_frame_159_delamination_pred.png}}
+%					%					\end{figure}}			
+%			\only<1>{
+%				\setcounter{subfigure}{0}					
+%				%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%				\begin{figure}
+%					\subfloat[listentry][HR ref]{\includegraphics[height=.35\textheight]{output_438_frame_154_full_frame_GT.png}}\quad
+%					\subfloat[listentry][DLSR]{\includegraphics[height=.35\textheight]{output_438_frame_154_full_frame_pred.png}}
+%					\\
+%					\subfloat[listentry][Ref]{\includegraphics[height=.35\textheight]{output_438_frame_154_delamination_GT.png}}\quad	
+%					\subfloat[listentry][DLSR]{\includegraphics[height=.35\textheight]{output_438_frame_154_delamination_pred.png}}
+%			\end{figure}}
+%			\only<2>{	
+%				\setcounter{subfigure}{0}
+%				\begin{figure}
+%					\centering
+%					\subfloat[listentry][HR ref]{\includegraphics[height=.35\textheight]{output_397_frame_127_full_frame_GT.png}}\quad
+%					\subfloat[listentry][DLSR]{\includegraphics[height=.35\textheight]{output_397_frame_127_full_frame_pred.png}}
+%					\\
+%					\subfloat[listentry][Ref]{\includegraphics[height=.35\textheight]{output_397_frame_127_delamination_GT.png}}\quad
+%					\subfloat[listentry][DLSR]{\includegraphics[height=.35\textheight]{output_397_frame_127_delamination_pred.png}}
+%			\end{figure}}
+%		\end{column}
+%	\end{columns}
+%\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\note
+%{
+%	\footnotesize
+%	In the following, the results of the reconstruction of HR frames for two numerical test cases will be presented.				
+%	
+%	In the first test case, the figure shows the low-resolution measurements at frame number 154.		
+%	Figure a shows the actual HR frame, and figure b shows the predicted SR frame. 
+%	The PSNR value is 47
+%	
+%	Figure c shows the HR sub-frame at the delamination region, figure d shows the SR prediction at the delamination region, and the PSNR is 38.52.
+%	
+%	In the second test case, the figure shows the low-resolution measurements at frame number 127.
+%	Figure a shows the actual HR frame, and figure b shows the predicted SR frame. 
+%	The PSNR value is 42.95
+%	
+%	Figure c shows the HR sub-frame at the delamination region, figure d shows the SR prediction at the delamination region, and the PSNR is 33.02.
+%	
+%	
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\setcounter{subfigure}{0}
+%\begin{frame}{Experimental test case}		
+%	\begin{columns}[T]
+%		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%		\begin{column}[t]{0.25\textwidth}				
+%			\begin{figure}	
+%				\centering					
+%				\includegraphics[width=1\textwidth]{frame110_32x32.png}
+%				%					\caption{LR input \((N_f = 110)\)}
+%			\end{figure}
+%			\footnotesize
+%			LR measurements (Input): \(32\times32=1024\)p. \\
+%			HR (Output): \(512\times512=262144\)p.
+%		\end{column}
+%		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%		\begin{column}[t]{.25\textwidth}
+%			\begin{block}{HR label}
+%				\begin{figure}
+%					\centering
+%					\subfloat{\includegraphics[width=0.75\textwidth]{figure10a.png}}
+%					\vfill
+%					\subfloat{\includegraphics[width=0.75\textwidth]{figure11a.png}}
+%				\end{figure}
+%			\end{block}
+%		\end{column}
+%		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%		\begin{column}[t]{.25\textwidth}
+%			\begin{block}{CS: 1024p}
+%				\begin{figure}
+%					\centering
+%					\subfloat{\includegraphics[width=0.75\textwidth]{figure10b.png}}
+%					\vfill						
+%					\subfloat{\includegraphics[width=0.75\textwidth]{figure11b.png}}
+%				\end{figure}
+%			\end{block}				
+%		\end{column}
+%		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%		\begin{column}[t]{.25\textwidth}
+%			\begin{alertblock}{DLSR}
+%				\begin{figure}
+%					\centering
+%					\subfloat{\includegraphics[width=0.75\textwidth]{figure10e.png}}
+%					\vfill			
+%					\subfloat{\includegraphics[width=0.75\textwidth]{figure11e.png}}\quad
+%				\end{figure}
+%			\end{alertblock}				
+%			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%		\end{column}				
+%	\end{columns}
+%\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\note{
+%	\footnotesize
+%	In this slide, I present an experimental test case,
+%	
+%	The figure on the left represents an experimentally acquired full wavefield in it low resolution.	
+%	
+%	This Figure shows the actual HR reference frame for the whole plate and at the delamination area
+%	
+%	The figure in the middle represents the outputs of applying the compressive sensing technique in which it shows a poor quality of reconstruction. 
+%	
+%	
+%	The figure on the right presents the reconstructed HR frame with the DLSR model for the whole plate and at the delamination area as you can see the quality of reconstruction is very noticeable. 
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}{Analysis of experimental case}
+%	\begin{table}[!ht]
+%		\renewcommand{\arraystretch}{1.3}
+%		\centering \footnotesize
+%		\caption{Quality metrics for tested methods.}	
+%		\begin{tabular}{lrrrcrc} 
+%			\toprule[1.5pt]
+%			& & & \multicolumn{2}{c}{plate} & \multicolumn{2}{c}{delamination} \\
+%			\cmidrule(lr){4-5} \cmidrule(lr){6-7}
+%			Method & $N_p$ & CR [\%] & PSNR & PEARSON CC& PSNR & PEARSON CC \\
+%			\midrule
+%			\csvreader
+%			[table head=\toprule,
+%			late after line=\\ 
+%			]{table_metrics.csv}{
+%				1=\one, 2=\two, 3=\three, 4=\four, 5=\five, 6=\six, 7=\seven
+%			}%
+%			{\one & \two & \three & \four & \five & \six & \seven }%	
+%			\bottomrule[1.5pt]
+%		\end{tabular}	
+%		\label{tab:csv_results_}
+%	\end{table}
+%\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\note{
+%	The following table presents a detailed comparison of the quality metrics for CS methods with applied jitter and random masks and the DLSR model.
+%	As shown in the table the DLSR model achieved the highest PSNR and Pearson CC values.		
+%}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusions}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Conclusions}		
-	\begin{footnotesize}
 		\begin{justify}
 			\settowidth{\leftmargini}{\usebeamertemplate{itemize item}}
 			\addtolength{\leftmargini}{\labelsep}
 			\begin{itemize}
-				\item{Deep learning models trained on synthetic dataset generalise well and can be applied directly to experimental wavefields.}			
-				\item{Deep learning approaches surpass conventional approaches for delamination identification.}	
-				\item{Animation-based deep learning models perform better than image-based models but are more complex and require longer time for training.}					
-				\item{Deep learning models can be generalised to other types of defects and materials.}
-				\item{The DLSR model can recover the HR measurements from LR measurements with good accuracy.}
+				\item{Improved Damage Detection}			
+				\item{Enhanced Fault Diagnosis}	
+				\item{Real-time Monitoring and Early Warning}					
+				\item{Reduced Manual Effort and Cost}
+				\item{Increased Accuracy and Reliability}
+				\item{Adaptability and Generalization}
+				\item{Data-Driven Decision Making}
 			\end{itemize}
 		\end{justify}									
-	\end{footnotesize}			
 \end{frame}			
-\note{}	
+\note{
+	Utilizing artificial intelligence (AI) and deep learning approaches in structural health monitoring (SHM) has several significant benefits and conclusions. Here are some key conclusions of applying AI and deep learning in SHM:
+	
+	Improved Damage Detection: AI and deep learning techniques have shown promise in accurately detecting and localizing damage in structures. They can learn complex patterns and features from sensor data, enabling more effective damage identification compared to traditional methods.
+	
+	Enhanced Fault Diagnosis: AI-based approaches enable automated and intelligent fault diagnosis in structures. By analyzing sensor data, these techniques can identify specific faults or anomalies, allowing for timely maintenance and repairs.
+	
+	Real-time Monitoring and Early Warning: AI and deep learning algorithms can process large amounts of sensor data in real-time, facilitating continuous monitoring of structural health. This capability enables early warning systems, alerting operators or stakeholders about potential structural issues before they escalate into critical failures.
+	
+	Reduced Manual Effort and Cost: By automating the analysis and interpretation of sensor data, AI and deep learning techniques reduce the need for extensive manual labor and costly manual inspections. This efficiency leads to cost savings in terms of maintenance and monitoring efforts.
+	
+	Increased Accuracy and Reliability: Deep learning models can capture intricate relationships in complex structural data, resulting in improved accuracy and reliability in SHM tasks. They can handle high-dimensional data and handle noise or variability, leading to more robust and dependable structural health assessments.
+	
+	Adaptability and Generalization: AI and deep learning approaches have the capability to adapt to different types of structures and environments. They can generalize well across various structural systems, allowing for transfer learning and application to different scenarios without requiring significant retraining.
+	
+	Data-Driven Decision Making: AI and deep learning techniques enable data-driven decision making in SHM. By analyzing historical data and real-time sensor information, these approaches can provide insights and recommendations for effective structural maintenance and management strategies.
+	
+	Overall, the utilization of AI and deep learning in structural health monitoring offers significant advancements in damage detection, fault diagnosis, real-time monitoring, cost savings, accuracy, adaptability, and data-driven decision making. These approaches have the potential to revolutionize the field of SHM and contribute to safer and more efficient management of structures.
+}	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \setcounter{subfigure}{0}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

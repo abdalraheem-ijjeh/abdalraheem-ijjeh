@@ -1,0 +1,2039 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="-924 -474 1848 948"
+   width="1848"
+   height="948"
+   style="background-color: rgb(255, 255, 255);"
+   version="1.1"
+   id="svg69456"
+   sodipodi:docname="nn_encoder_decoder.svg"
+   inkscape:version="1.1 (1:1.1+202105261517+ce6663b3b7)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs69460">
+    <marker
+       style="overflow:visible"
+       id="marker82060"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lstart"
+       inkscape:isstock="true">
+      <path
+         transform="scale(1.1) translate(1,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="fill-rule:evenodd;fill:context-stroke;stroke-width:0.62500000;stroke-linejoin:round"
+         id="path82058" />
+    </marker>
+    <marker
+       style="overflow:visible;"
+       id="Arrow2Lend"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(1.1) rotate(180) translate(1,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="fill-rule:evenodd;fill:context-stroke;stroke-width:0.62500000;stroke-linejoin:round;"
+         id="path32628" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow2Lstart"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lstart"
+       inkscape:isstock="true">
+      <path
+         transform="scale(1.1) translate(1,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="fill-rule:evenodd;fill:context-stroke;stroke-width:0.62500000;stroke-linejoin:round"
+         id="path32625" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="namedview69458"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="1.5841029"
+     inkscape:cx="868.31483"
+     inkscape:cy="416.95525"
+     inkscape:window-width="1848"
+     inkscape:window-height="1016"
+     inkscape:window-x="72"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg69456" />
+  <path
+     d="m -100.68064,-17.506128 -0.35179,-0.0086 m 0,-102.899282 v 102.899282 m 0,0 -21.57916,11.6560612 m 21.93095,-114.5467232 v 102.899282 m 0,0 -21.57916,11.6560615"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path68928"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -100.68064,-17.506128 -0.35179,-0.0086 V -120.41403 Z m 0,-102.899282 v 102.899282 l -0.35179,-102.907902 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path68930"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -100.68064,-120.40541 -0.35179,-0.009 m 0,0 -21.57916,11.65606 m 21.93095,-11.64744 -21.57916,11.65606 m 57.246422,69.438615 -20.482544,-0.501911 m 0,-51.449642 v 51.449642 m 0,0 -10.789581,5.828031"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path68932"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -122.61159,-5.8586868 21.57916,-11.6560612 0.35179,0.0086 z m 57.598212,-33.4520482 -20.482544,-0.501911 v -51.449642 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path68934"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -65.013378,-90.760377 v 51.449642 m 0,0 -10.789582,5.828031"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path68936"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -122.2598,-5.8500665 21.57916,-11.6560615 V -120.40541 Z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path68938"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -65.013378,-90.760377 -20.482544,-0.501911 m 0,0 -10.789581,5.82803"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path68940"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -65.013378,-90.760377 v 51.449642 l -20.482544,-51.951553 z m -36.019052,-29.653653 v 102.899282 l -21.57916,-91.243222 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path68942"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -65.013378,-90.760377 -10.789582,5.828031"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path68944"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -122.2598,-108.74935 21.57916,-11.65606 -0.35179,-0.009 z m 25.974297,74.764735 10.789581,-5.828031 20.482544,0.501911 z m 10.789581,-57.277673 v 51.449642 l -10.789581,-45.621612 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path68946"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -21.35219,-49.580151 -25.603181,-0.627389 m 0,-25.724821 v 25.724821 m 0,0 -5.394791,2.914015"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path68948"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -75.80296,-33.482704 10.789582,-5.828031 v -51.449642 z m 54.45077,-16.097447 -25.603181,-0.627389 v -25.724821 z m -54.45077,-35.352195 10.789582,-5.828031 -20.482544,-0.501911 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path68950"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -21.35219,-75.304972 -25.603181,-0.627389 m 0,0 -5.394791,2.914015 m 30.289333,9.114714 -25.603182,-0.62739 m 0,-1.786446 v 1.786446 m 0,0 -0.374638,0.202362 m 25.97782,-1.361418 -25.603182,-0.62739 m 0,0 -0.374638,0.202363 m 26.686459,-9.189867 v 25.724821 m 0,0 -5.39479,2.914015"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path68952"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -21.35219,-75.304972 v 25.724821 l -25.603181,-26.35221 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path68954"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -47.664011,-66.317468 v 1.786446 l -0.374638,-1.584083 z m 0,1.786446 -0.374638,0.202362 v -1.786445 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path68956"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -48.038649,-66.115105 v 1.786445 m 0,0 25.603182,0.62739"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path68958"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -22.060829,-63.903632 -25.603182,-0.62739 v -1.786446 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path68960"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -48.038649,-66.115105 25.603182,0.627389"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path68962"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -48.038649,-64.32866 0.374638,-0.202362 25.603182,0.62739 z m 0,-1.786445 25.603182,0.627389 -25.228544,-0.829752 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path68964"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -21.35219,-75.304972 -5.39479,2.914015"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path68966"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -48.038649,-66.115105 v 1.786445 l 25.603182,-1.159056 z m 25.97782,0.425027 v 1.786446 l -25.603182,-2.413836 z m -0.374638,0.202362 0.374638,-0.202362 -25.603182,-0.62739 z m 0,1.786446 -25.603182,-0.62739 25.97782,0.425028 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path68968"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -52.350162,-47.293525 5.394791,-2.914015 25.603181,0.627389 z m 5.394791,-28.638836 v 25.724821 l -5.394791,-22.810806 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path68970"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -22.06083,-65.690078 v 1.786445 m 0,0 -0.374639,0.202363 m 0.374639,-0.202363 19.6673659,1.571617 m -19.6673649,-3.358062 v 1.786446 m 0,0 -0.374638,0.202362"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path68972"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -48.038649,-64.32866 25.603182,0.62739 v -1.786446 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path68974"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -22.06083,-65.690078 -0.374639,0.202362 m 0.374639,-0.202362 19.6673659,3.358062 m -19.6673649,-3.358062 -0.374638,0.202362"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path68976"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -22.06083,-65.690078 v 1.786446 l -0.374638,0.202362 z"
+     style="fill:#ffbbbb;stroke-width:0.515048"
+     id="path68978"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -22.435467,-63.70127 0.374638,-0.202362 v -1.786446 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path68980"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -22.06083,-65.690078 -0.374638,1.988808 v -1.786446 z"
+     style="fill:#ffbbbb;stroke-width:0.515048"
+     id="path68982"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -22.435467,-65.487716 v 1.786446 l 0.374638,-1.988808 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path68984"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -122.2598,-5.8500665 -0.35179,-0.00862 21.93095,-11.6474415 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path68986"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -22.435469,-63.70127 v -1.786446 m 0,1.786446 20.0420049,1.369254 m -20.0420029,-3.1557 v 1.786446 m -2e-6,-1.786446 20.0420049,3.1557"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path68988"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -85.495922,-39.812646 -10.789581,5.828031 v -51.449643 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path68990"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -22.06083,-63.903632 v -1.786446 l 19.6673658,3.358062 z"
+     style="fill:#ffbbbb;stroke-width:0.515048"
+     id="path68992"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -75.80296,-33.482704 -20.482543,-0.501911 31.272125,-5.32612 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path68994"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -22.435468,-63.70127 0.374638,-0.202362 19.6673658,1.571616 z m 0.374638,-1.988808 -0.374638,0.202362 20.0420038,3.1557 z m -0.374638,0.202362 v 1.786446 l 20.0420038,1.369254 z"
+     style="fill:#ffbbbb;stroke-width:0.515048"
+     id="path68996"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -26.74698,-46.666136 5.39479,-2.914015 v -25.724821 z m 0,-25.724821 5.39479,-2.914015 -25.603181,-0.627389 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path68998"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -72.97166,-42.998469 -20.482544,-0.501911 m 0,-1.786446 v 1.786446 m 0,0 -0.374638,0.202362 m 20.857182,-1.486897 -20.482544,-0.501911 m 0,0 -0.374638,0.202362"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69000"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -101.03243,-17.514748 -21.57916,11.6560612 V -108.75797 Z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69002"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -93.454204,-45.286826 v 1.786446 l -0.374638,-1.584084 z m 0,1.786446 -0.374638,0.202362 v -1.786446 z m 20.482544,0.501911 -20.482544,-0.501911 v -1.786446 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69004"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 28.778332,-54.021388 -30.7238174,-0.752867 m 0,-12.86241 v 12.86241 m 0,0 -2.6973954,1.457008 m -89.1859612,8.232783 v 1.786446 m 0,0 20.482544,0.501911 m -20.482544,-2.288357 20.482544,0.501911"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69006"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -93.828842,-43.298018 0.374638,-0.202362 20.482544,0.501911 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69008"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -46.955371,-50.20754 -5.394791,2.914015 v -25.724821 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69010"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -93.828842,-45.084464 20.482544,0.501911 -20.107906,-0.704273 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69012"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -96.285503,-85.434258 20.482543,0.501912 -9.692962,-6.329942 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69014"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -72.97166,-44.784915 v 1.786446 l -20.482544,-2.288357 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69016"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 28.778332,-66.883798 -30.7238174,-0.752867 m 0,0 -2.6973954,1.457007"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69018"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -93.828842,-45.084464 v 1.786446 l 20.482544,-1.284535 z m 20.482544,0.501911 0.374638,-0.202362 -20.482544,-0.501911 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69020"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -75.80296,-84.932346 v 51.449642 l 10.789582,-57.277673 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69022"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -73.346298,-42.796107 -20.482544,-0.501911 20.857182,0.299549 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69024"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 28.778332,-54.021388 -30.7238174,-0.752867 v -12.86241 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69026"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -72.971661,-44.784915 21.943489,-7.662513 m -21.943489,9.448959 21.943489,-9.448959 m -22.318127,9.651321 22.318127,-9.651321 m -22.318127,7.864875 22.318127,-7.864875 m -21.943488,7.662513 v 1.786446 m 0,0 -0.374638,0.202362 m 0.374637,-1.988808 v 1.786446 m 0,0 -0.374638,0.202362"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69028"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -72.971659,-42.998469 v -1.786446 l 21.943488,-7.662513 z"
+     style="fill:#ffbbbb;stroke-width:0.515048"
+     id="path69030"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -72.97166,-44.784915 -0.374638,0.202362 m 0.374637,-0.202362 -0.374638,0.202362 m 328.172419,35.787886 -0.35179,-0.00862 m 0,-102.899283 V -8.8032873 m 0,0 -21.57916,11.6560612 M 254.82612,-111.69395 V -8.794667 m 0,0 -21.57917,11.6560612"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69034"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -93.828842,-43.298018 20.482544,0.501911 v -1.786446 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69036"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -73.346298,-42.796107 0.374639,-0.202362 21.943488,-9.448959 z"
+     style="fill:#ffbbbb;stroke-width:0.515048"
+     id="path69038"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -73.346298,-42.796107 0.374638,-0.202362 v -1.786446 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69040"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -72.971659,-44.784915 v 1.786446 l -0.374639,0.202362 z m 0,0 -0.374639,0.202362 22.318127,-7.864875 z"
+     style="fill:#ffbbbb;stroke-width:0.515048"
+     id="path69042"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -26.74698,-46.666136 -25.603182,-0.627389 30.997972,-2.286626 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69044"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -117.81913,-69.213455 23.74825,4.046503 m -23.74825,-2.260057 23.74825,2.260057 m -24.12289,-2.057695 24.12289,2.057695 m -24.12289,-3.84414 24.12289,3.84414"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69046"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -73.346298,-44.582553 v 1.786446 l 22.318127,-9.651321 z"
+     style="fill:#ffbbbb;stroke-width:0.515048"
+     id="path69048"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -73.346298,-44.582553 v 1.786446 l 0.374638,-1.988808 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69050"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -72.971659,-44.784915 -0.374639,1.988808 v -1.786446 z"
+     style="fill:#ffbbbb;stroke-width:0.515048"
+     id="path69052"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -73.346298,-44.582553 v 1.786446 m -10e-7,0 v -1.786446"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69054"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -52.350162,-73.018346 25.603182,0.627389 -20.208391,-3.541404 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69056"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 27.754095,-56.582765 -30.723818,-0.752867 m 0,-1.786446 v 1.786446 m 0,0 -0.3746383,0.202362"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69058"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -1.9454854,-67.636665 v 12.86241 l -2.6973954,-11.405403 z m 30.7238174,0.752867 v 12.86241 L -1.9454854,-67.636665 Z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69060"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 27.754095,-58.369211 -30.723818,-0.752867 m 0,0 -0.3746383,0.202362"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69062"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -2.969723,-59.122078 v 1.786446 l -0.3746383,-1.584084 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69064"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -4.6428808,-53.317247 2.6973954,-1.457008 30.7238174,0.752867 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69066"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -2.969723,-57.335632 -0.3746383,0.202362 v -1.786446 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69068"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 28.778332,-66.883798 v 12.86241 m 0,0 -2.697395,1.457008"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69070"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -122.61159,-108.75797 0.35179,0.009 21.22737,-11.66468 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69072"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -3.3443613,-58.919716 v 1.786446 m 0,0 30.7238173,0.752867"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69074"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 254.82612,-8.794667 -0.35179,-0.00862 V -111.70257 Z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69076"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -3.3443613,-58.919716 30.7238173,0.752867"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69078"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -26.74698,-72.390957 v 25.724821 l 5.39479,-28.638836 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69080"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 27.754095,-56.582765 -30.723818,-0.752867 v -1.786446 z m -31.0984563,-0.550505 0.3746383,-0.202362 30.723818,0.752867 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69082"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 28.778332,-66.883798 -2.697395,1.457007 m -78.431099,-7.591555 v 25.724821 m 0,0 25.603182,0.627389"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69084"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -3.3443613,-58.919716 30.7238173,0.752867 -30.349179,-0.955229 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69086"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -1.9454854,-54.774255 -2.6973954,1.457008 v -12.862411 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69088"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -3.3443613,-58.919716 v 1.786446 l 30.7238173,-1.033579 z m 31.0984563,0.550505 v 1.786446 l -30.723818,-2.539313 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69090"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 26.080937,-65.426791 2.697395,-1.457007 -30.7238174,-0.752867 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69092"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 27.379456,-58.166849 0.374639,-0.202362 -30.723818,-0.752867 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69094"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -117.81913,-67.427009 v -1.786446 l 23.748252,4.046503 z"
+     style="fill:#ffbbbb;stroke-width:0.515048"
+     id="path69096"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="M 27.379456,-56.380403 -3.3443613,-57.13327 27.754095,-56.582765 Z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69098"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -96.285503,-85.434258 v 51.449643 m 0,0 20.482543,0.501911"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69100"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="M 254.82612,-111.69395 V -8.794667 l -0.35179,-102.907903 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69102"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -118.19376,-67.224647 0.37463,-0.202362 23.748252,2.260057 z m 0.37463,-1.988808 -0.37463,0.202362 24.122882,3.844141 z"
+     style="fill:#ffbbbb;stroke-width:0.515048"
+     id="path69104"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 26.080937,-52.56438 2.697395,-1.457008 v -12.86241 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69106"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -3.3443613,-57.13327 30.7238173,0.752867 v -1.786446 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69108"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -52.350162,-73.018346 25.603182,0.627389 m 54.501075,14.021746 v 1.786446 m 0,0 -0.374639,0.202362 m 0.374639,-1.988808 v 1.786446 m 0,0 -0.374639,0.202362 m 0.374639,-0.202362 20.499513,-1.458085"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69110"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 27.754095,-58.369211 -0.374639,0.202362 m 0.374639,-0.202362 -0.374639,0.202363 m 0.374639,-0.202363 20.499513,0.328361"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69114"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -4.6428808,-66.179658 30.7238178,0.752867 -28.0264224,-2.209874 z m -47.7072812,-6.838688 v 25.724821 l 25.603182,-25.097432 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69116"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 27.754094,-58.369211 v 1.786446 l -0.374638,0.202362 z"
+     style="fill:#ffbbbb;stroke-width:0.515048"
+     id="path69118"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 27.379456,-56.380403 0.374639,-0.202362 v -1.786446 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69120"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -4.6428808,-66.179658 v 12.862411 m 0,0 30.7238178,0.752867"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69122"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 26.080937,-52.56438 -30.7238178,-0.752867 33.4212128,-0.704141 z m -78.431099,5.270855 25.603182,0.627389 v -25.724821 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69124"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 27.754094,-58.369211 -0.374638,1.988808 v -1.786446 z"
+     style="fill:#ffbbbb;stroke-width:0.515048"
+     id="path69126"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 27.379456,-58.166849 v 1.786446 l 0.374639,-1.988808 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69128"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 27.379456,-56.380403 v -1.786445 m 0,1.786445 20.874152,-1.660447 m -20.874152,-0.125999 v 1.786446 m 0,-1.786445 20.874152,0.125998"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69130"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 27.754094,-56.582765 v -1.786446 l 20.499513,0.328361 z"
+     style="fill:#ffbbbb;stroke-width:0.515048"
+     id="path69132"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -26.74698,-72.390957 v 25.724821 m -90.89625,-20.756563 -0.35179,-0.0086 m 0,-1.786446 v 1.786446 m 0,0 -0.37464,0.202362 m 0.55053,-1.984498 v 1.786446 m 0,0 -0.37464,0.202362 m 0.55054,-1.984498 v 1.786446 m 0,0 -0.37464,0.202363"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69134"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -117.64323,-67.422699 -0.35179,-0.0086 v -1.786446 z m 0,-1.786446 v 1.786446 l -0.35179,-1.795066 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69136"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -117.64323,-69.209145 -0.35179,-0.0086 m 0,0 -0.37464,0.202362 m 0.55053,-0.198052 -0.37464,0.202363 m 0.55054,-0.198053 -0.37464,0.202363 m 113.3749892,2.827124 30.7238178,0.752867"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69138"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 27.379456,-56.380403 0.374638,-0.202362 20.499513,-1.458085 z m 0.374638,-1.988808 -0.374638,0.202362 20.874151,0.125999 z"
+     style="fill:#ffbbbb;stroke-width:0.515048"
+     id="path69140"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -118.36966,-67.228957 0.37464,-0.202362 0.35179,0.0086 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69142"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 84.703839,-55.485796 -35.844454,-0.878345 m 0,-6.431205 v 6.431205 m 0,0 -1.348698,0.728504"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69144"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -117.81913,-69.213455 v 1.786446 l -0.37463,0.202362 z"
+     style="fill:#ffbbbb;stroke-width:0.515048"
+     id="path69146"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -117.99502,-69.217765 v 1.786446 l -0.37464,-1.584084 z m -0.0229,1.997429 0.37464,-0.202363 v -1.786446 z m 0,-1.786446 0.37464,-0.202363 -0.35179,-0.0086 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69148"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 27.379456,-58.166849 v 1.786446 l 20.874151,-1.660447 z"
+     style="fill:#ffbbbb;stroke-width:0.515048"
+     id="path69150"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 254.82612,-111.69395 -0.35179,-0.009 m 0,0 -21.57916,11.65606"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69152"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -118.01787,-67.220336 -0.35179,-0.0086 0.72643,-0.193742 z m 0.0229,-0.210983 -0.37464,0.202362 v -1.786446 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69154"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 254.82612,-111.69395 -21.57917,11.65606 m -309.04991,15.105544 v 51.449642"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69156"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -117.81913,-69.213455 -0.37463,1.988808 v -1.786446 z"
+     style="fill:#ffbbbb;stroke-width:0.515048"
+     id="path69158"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -118.01787,-69.006782 v 1.786446 l 0.37464,-1.988809 z m -0.35179,-0.0086 0.35179,0.0086 0.0229,-0.210983 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69160"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 84.703839,-61.917001 -35.844454,-0.878345 m 0,0 -1.348698,0.728504 m 37.044723,5.988762 -35.844454,-0.878345 m 0,-1.786446 v 1.786446 m 0,0 -0.374638,0.202362 m 36.219092,-1.110463 -35.844454,-0.878345 m 0,0 -0.374638,0.202362 M -118.36966,-69.015403 v 1.786446 m 0,0 0.35179,0.0086 m -0.1759,-0.0043 v -1.786445"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69162"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -96.285503,-33.984615 20.482543,0.501911 v -51.449642 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69164"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -118.01787,-69.006782 v 1.786446"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69166"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -4.6428808,-66.179658 v 12.862411 L 26.080937,-65.426791 Z m 30.7238178,0.752867 v 12.862411 l 2.697395,-14.319418 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69172"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 48.710956,-58.742871 v 1.786446 l -0.374638,-1.584084 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69174"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -88.771202,-85.434258 v 51.449643 l 20.482543,-50.947731 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69176"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 48.710956,-56.956425 -0.374638,0.202362 v -1.786446 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69178"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -96.285503,-85.434258 20.482543,0.501912 m 124.139278,26.391837 v 1.786446 m 0,0 35.844454,0.878345"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69180"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 48.859385,-62.795346 v 6.431205 l -1.348698,-5.702701 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69182"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 48.336318,-58.540509 35.844454,0.878345"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69184"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 84.703839,-55.485796 -35.844454,-0.878345 v -6.431205 z m -89.3467198,2.168549 30.7238178,0.752867 v -12.862411 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69186"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 84.55541,-56.07808 -35.844454,-0.878345 v -1.786446 z m -36.219092,-0.675983 0.374638,-0.202362 35.844454,0.878345 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69188"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 48.859385,-56.364141 -1.348698,0.728504 v -6.431205 z m -1.348698,0.728504 1.348698,-0.728504 35.844454,0.878345 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69190"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 48.336318,-58.540509 35.844454,0.878345 -35.469816,-1.080707 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69192"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="M 26.080937,-65.426791 V -52.56438"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69194"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 48.336318,-58.540509 v 1.786446 l 35.844454,-0.908101 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69196"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 84.703839,-61.917001 v 6.431205 l -35.844454,-7.30955 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69198"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 84.55541,-57.864526 v 1.786446 l -35.844454,-2.664791 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69200"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 47.510687,-62.066842 v 6.431205 m 0,0 35.844454,0.878345"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69202"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 84.180772,-57.662164 0.374638,-0.202362 -35.844454,-0.878345 z m 0,1.786446 -35.844454,-0.878345 36.219092,0.675983 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69204"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 47.510687,-62.066842 35.844454,0.878345"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69206"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 47.510687,-62.066842 35.844454,0.878345 -34.495756,-1.606849 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69208"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 84.703839,-61.917001 v 6.431205 m 0,0 -1.348698,0.728504"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69210"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 48.336318,-56.754063 35.844454,0.878345 v -1.786446 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69212"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 83.355141,-61.188497 1.348698,-0.728504 -35.844454,-0.878345 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69214"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 228.50003,-32.118381 -20.48254,-0.501911 m 0,-51.449642 v 51.449642 m 0,0 -10.78959,5.828031 m -112.524061,-35.12474 -1.348698,0.728504 m 1.200269,3.323971 v 1.786446 m 0,0 -0.374638,0.202362 m 0.374639,-1.988808 v 1.786446 m 0,0 -0.374638,0.202362 m 0.374638,-0.202362 20.906689,1.18358 m 31.39531,3.521519 -30.72382,-0.752867 m 0,-12.86241 v 12.86241 m 0,0 -2.6974,1.457008 m -18.88078,-7.195686 -0.374638,0.202362 m 0.374639,-0.202362 -0.374638,0.202362 m 0.374638,-0.202362 20.906689,2.970026"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69216"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 84.555409,-57.864526 v 1.786446 l -0.374638,0.202362 z"
+     style="fill:#ffbbbb;stroke-width:0.515048"
+     id="path69218"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 84.180772,-55.875718 0.374638,-0.202362 v -1.786446 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69220"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 83.355141,-54.757292 -35.844454,-0.878345 37.193152,0.149841 z m -35.844454,-7.30955 v 6.431205 l 35.844454,-5.55286 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69222"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 84.555409,-56.07808 v -1.786446 l 20.906681,2.970026 z m 0,-1.786446 -0.374638,1.988808 v -1.786446 z"
+     style="fill:#ffbbbb;stroke-width:0.515048"
+     id="path69224"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 84.180772,-57.662164 v 1.786446 l 0.374638,-1.988808 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69226"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 136.6726,-55.135373 -30.72382,-0.752867 m 0,-1.786446 v 1.786446 m 0,0 -0.37464,0.202363"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69228"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 83.355141,-54.757292 1.348698,-0.728504 v -6.431205 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69230"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 136.85741,-64.235391 -30.72382,-0.752867 m 0,0 -2.6974,1.457007 m 33.23641,6.609433 -30.72382,-0.752868 m 0,0 -0.37464,0.202363 m -21.393368,-0.189841 v 1.786446 m 10e-7,0 v -1.786446 m 0,1.786446 21.281327,0.981218"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69232"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 84.180771,-55.875718 0.374638,-0.202362 20.906681,1.18358 z m 0.374638,-1.988808 -0.374638,0.202362 21.281319,2.767664 z"
+     style="fill:#ffbbbb;stroke-width:0.515048"
+     id="path69234"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="M 84.180773,-57.662164 105.4621,-54.8945"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69236"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 105.94878,-57.674686 v 1.786446 l -0.37464,-1.584083 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69238"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 84.180771,-57.662164 v 1.786446 l 21.281319,0.981218 z"
+     style="fill:#ffbbbb;stroke-width:0.515048"
+     id="path69240"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 105.94878,-55.88824 -0.37464,0.202363 v -1.786446 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69242"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 136.85741,-51.372981 -30.72382,-0.752867 v -12.86241 z m 91.64262,19.2546 -20.48254,-0.501911 v -51.449642 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69244"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 105.57414,-57.472323 v 1.786446 m 0,0 30.72382,0.752867"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69246"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 47.510687,-55.635637 35.844454,0.878345 v -6.431205 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69248"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 105.57414,-57.472323 30.72382,0.752867"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69250"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 136.6726,-55.135373 -30.72382,-0.752867 v -1.786446 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69252"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 83.355141,-61.188497 v 6.431205 l 1.348698,-7.159709 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69254"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 184.56469,-44.534292 -25.60318,-0.62739 m 0,-25.724821 v 25.724821 m 0,0 -5.39479,2.914016 m 74.93331,-41.320357 v 51.449642 m 0,0 -10.78958,5.828031"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69256"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 105.57414,-55.685877 0.37464,-0.202363 30.72382,0.752867 z m 0,-1.786446 30.72382,0.752867 -30.34918,-0.95523 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69258"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 106.13359,-64.988258 v 12.86241 l -2.6974,-11.405403 z m 30.72382,0.752867 v 12.86241 l -30.72382,-13.615277 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69260"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 105.57414,-57.472323 v 1.786446 l 30.72382,-1.033579 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69262"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 83.355141,-61.188497 v 6.431205 m 145.144889,-28.810731 -20.48254,-0.501911 m 0,0 -10.78959,5.828031 M -122.61159,-108.75797 V -5.8586868 m 0,0 0.35179,0.00862 m 0,-102.8992832 V -5.8500665"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69264"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 136.6726,-56.921818 v 1.786445 l -30.72382,-2.539313 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69266"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 103.43619,-50.66884 2.6974,-1.457008 30.72382,0.752867 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69268"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 136.29796,-56.719456 0.37464,-0.202362 -30.72382,-0.752868 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69270"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 228.50003,-83.568023 v 51.449642 l -20.48254,-51.951553 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69272"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 136.85741,-64.235391 v 12.86241 m 0,0 -2.6974,1.457008"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69274"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 184.56469,-44.534292 -25.60318,-0.62739 v -25.724821 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69276"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 136.29796,-54.93301 -30.72382,-0.752867 31.09846,0.550504 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69278"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 184.56469,-70.259113 -25.60318,-0.62739 m 0,0 -5.39479,2.914016"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69280"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 105.57414,-55.685877 30.72382,0.752867 v -1.786446 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69282"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 136.6726,-56.921818 v 1.786445 m 0,0 -0.37464,0.202363 m 0.37464,-1.988808 v 1.786446 m 0,0 -0.37464,0.202362 m 0.37464,-0.202362 21.54466,0.864823 m -21.35985,-9.964842 -2.6974,1.457008 m 2.51259,5.856565 -0.37464,0.202362 m 0.37464,-0.202362 -0.37464,0.202362 m 0.37464,-0.202362 21.54466,2.651269"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69284"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 136.6726,-55.135373 v -1.786445 l 21.54465,2.651269 z"
+     style="fill:#ffbbbb;stroke-width:0.515048"
+     id="path69286"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 136.29796,-54.93301 21.9193,0.662461 m -21.9193,-2.448907 21.9193,2.448907"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69288"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 136.6726,-56.921818 v 1.786445 l -0.37464,0.202363 z"
+     style="fill:#ffbbbb;stroke-width:0.515048"
+     id="path69290"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 136.29796,-54.93301 0.37464,-0.202363 v -1.786445 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69292"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 136.29796,-54.93301 0.37464,-0.202363 21.54465,0.864824 z m 0.37464,-1.988808 -0.37464,0.202362 21.91929,2.448907 z"
+     style="fill:#ffbbbb;stroke-width:0.515048"
+     id="path69294"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 106.13359,-52.125848 -2.6974,1.457008 v -12.862411 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69296"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 136.6726,-56.921818 -0.37464,1.988808 v -1.786446 z"
+     style="fill:#ffbbbb;stroke-width:0.515048"
+     id="path69298"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 136.29796,-56.719456 v 1.786446 l 0.37464,-1.988808 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69300"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 136.29796,-56.719456 v 1.786446 l 21.91929,0.662461 z"
+     style="fill:#ffbbbb;stroke-width:0.515048"
+     id="path69302"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 184.56469,-70.259113 v 25.724821 m 0,0 -5.39479,2.914015"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69304"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 184.56469,-70.259113 v 25.724821 l -25.60318,-26.352211 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69306"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 136.29796,-56.719456 v 1.786446 m 0,0 v -1.786446"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69308"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -122.61159,-5.8586868 0.35179,0.00862 V -108.74935 Z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69310"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 228.50003,-83.568023 -10.78958,5.828031"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69312"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 134.16001,-62.778383 2.6974,-1.457008 -30.72382,-0.752867 z m 0,12.86241 2.6974,-1.457008 v -12.86241 z m -30.72382,-13.615278 30.72382,0.752868 -28.02642,-2.209875 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69314"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 184.56469,-70.259113 -5.39479,2.914015 m -75.73371,3.813847 v 12.862411 m 0,0 30.72382,0.752867"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69316"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 134.16001,-49.915973 -30.72382,-0.752867 33.42122,-0.704141 z m -256.7716,-58.841997 V -5.8586868 l 0.35179,-102.8906632 z m 355.50676,111.6107439 21.57916,-11.6560612 0.35179,0.00862 z m -79.32845,-45.1004399 5.39479,-2.914016 25.60318,0.62739 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69318"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 103.43619,-63.531251 30.72382,0.752868"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69320"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 158.96151,-70.886503 v 25.724821 l -5.39479,-22.810805 z m -55.52532,7.355252 v 12.862411 l 30.72382,-12.109543 z m 30.72382,0.752868 v 12.86241 l 2.6974,-14.319418 z m -30.72382,12.109543 30.72382,0.752867 v -12.86241 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69322"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -122.61159,-108.75797 0.35179,0.009"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69324"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="M 233.24695,2.8613942 254.82612,-8.794667 V -111.69395 Z m -36.01905,-29.6536552 10.78959,-5.828031 20.48254,0.501911 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69326"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 181.60217,-50.152722 -25.60318,-0.627389 m 0,-1.786446 v 1.786446 m 0,0 -0.37464,0.202362"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69328"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 179.1699,-41.620277 5.39479,-2.914015 v -25.724821 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69330"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 181.60217,-51.939168 -25.60318,-0.627389 m 0,0 -0.37464,0.202362"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69332"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 179.1699,-67.345098 5.39479,-2.914015 -25.60318,-0.62739 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69334"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 134.16001,-62.778383 v 12.86241"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69336"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 155.99899,-52.566557 v 1.786446 l -0.37464,-1.584084 z m 0,1.786446 -0.37464,0.202362 v -1.786446 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69338"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 155.62435,-52.364195 v 1.786446 m 0,0 25.60318,0.627389"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69340"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 208.01749,-84.069934 v 51.449642 L 197.2279,-78.241903 Z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69342"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 181.60217,-50.152722 -25.60318,-0.627389 v -1.786446 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69344"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 155.62435,-52.364195 25.60318,0.627389"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69346"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 155.62435,-50.577749 0.37464,-0.202362 25.60318,0.627389 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69348"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 158.96151,-45.161682 -5.39479,2.914016 v -25.724821 z m 95.51282,-66.540888 V -8.8032873 L 232.89517,-100.04651 Z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69350"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 155.62435,-52.364195 25.60318,0.627389 -25.22854,-0.829751 z m 0,0 v 1.786446 l 25.60318,-1.159057 z m 25.97782,0.425027 v 1.786446 l -25.60318,-2.413835 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69352"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 217.71045,-26.29035 10.78958,-5.828031 v -51.449642 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69354"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 181.22753,-51.736806 0.37464,-0.202362 -25.60318,-0.627389 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69356"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 223.90093,-46.657919 -20.48255,-0.501912 m 0,-1.786446 v 1.786446 m 0,0 -0.37463,0.202362 m 20.85718,-1.486896 -20.48255,-0.501912 m 0,0 -0.37463,0.202362"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69358"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 181.22753,-49.95036 -25.60318,-0.627389 25.97782,0.425027 z m 22.19085,1.004083 v 1.786446 l -0.37463,-1.584084 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69360"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 181.60217,-51.939168 v 1.786446 m 0,0 -0.37464,0.202362 m 0.37465,-1.988808 v 1.786446 m 0,0 -0.37464,0.202362 m 0.37464,-0.202362 20.11564,4.711487"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69362"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 155.62435,-50.577749 25.60318,0.627389 v -1.786446 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69364"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 181.60217,-51.939168 -0.37464,0.202362 m 0.37465,-0.202362 -0.37464,0.202362 m 0.37464,-0.202362 20.11564,6.497933"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69366"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 179.1699,-41.620277 -25.60318,-0.627389 30.99797,-2.286626 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69368"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 203.41838,-47.159831 -0.37463,0.202362 v -1.786446 z m 20.48255,0.501912 -20.48255,-0.501912 v -1.786446 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69370"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 181.60217,-51.939168 v 1.786446 l -0.37464,0.202362 z"
+     style="fill:#ffbbbb;stroke-width:0.515048"
+     id="path69372"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 181.22753,-49.95036 0.37464,-0.202362 v -1.786446 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69374"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 203.04375,-48.743915 v 1.786446 m 0,0 20.48254,0.501912 m -20.48254,-2.288358 20.48254,0.501912"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69376"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 203.04375,-46.957469 0.37463,-0.202362 20.48255,0.501912 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69378"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 217.71045,-77.739992 10.78958,-5.828031 -20.48254,-0.501911 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69380"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 181.60217,-51.939168 -0.37464,1.988808 v -1.786446 z"
+     style="fill:#ffbbbb;stroke-width:0.515048"
+     id="path69382"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 181.22753,-51.736806 v 1.786446 l 0.37464,-1.988808 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69384"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 153.56672,-67.972487 25.60318,0.627389 -20.20839,-3.541405 z m 79.68023,-32.065403 21.57917,-11.65606 -0.35179,-0.009 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69386"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 181.22753,-51.736806 v 1.786446 m 1e-5,0 v -1.786446 m 0,1.786446 20.49028,4.509125"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69388"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 203.04375,-48.743915 20.48254,0.501912 -20.10791,-0.704274 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69390"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 181.22754,-51.736806 20.49028,6.295571"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69392"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 223.90093,-48.444365 v 1.786446 l -20.48255,-2.288358 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69394"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 181.60217,-50.152722 v -1.786446 l 20.11565,6.497933 z"
+     style="fill:#ffbbbb;stroke-width:0.515048"
+     id="path69396"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 203.04375,-48.743915 v 1.786446 l 20.48254,-1.284534 z m 20.48254,0.501912 0.37464,-0.202362 -20.48255,-0.501912 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69398"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 181.22753,-49.95036 0.37464,-0.202362 20.11565,4.711487 z m 0.37464,-1.988808 -0.37464,0.202362 20.49029,6.295571 z"
+     style="fill:#ffbbbb;stroke-width:0.515048"
+     id="path69400"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 223.52629,-46.455557 -20.48254,-0.501912 20.85718,0.29955 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69402"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 223.90093,-48.444365 v 1.786446 m 0,0 -0.37464,0.202362 m 0.37464,-1.988808 v 1.786446 m 0,0 -0.37464,0.202362 m 0.37464,-0.202362 21.17646,7.19578"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69404"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 181.22753,-51.736806 v 1.786446 l 20.49029,4.509125 z"
+     style="fill:#ffbbbb;stroke-width:0.515048"
+     id="path69406"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 223.90093,-48.444365 -0.37464,0.202362 m 0.37464,-0.202362 -0.37464,0.202362 m 0.37464,-0.202362 21.17646,8.982226"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69408"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 203.04375,-46.957469 20.48254,0.501912 v -1.786446 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69410"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 223.90093,-46.657919 v -1.786446 l 21.17645,8.982226 z"
+     style="fill:#ffbbbb;stroke-width:0.515048"
+     id="path69412"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 223.52629,-46.455557 0.37464,-0.202362 v -1.786446 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69414"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 223.90093,-48.444365 v 1.786446 l -0.37464,0.202362 z"
+     style="fill:#ffbbbb;stroke-width:0.515048"
+     id="path69416"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 179.1699,-67.345098 v 25.724821 l 5.39479,-28.638836 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69418"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 223.52629,-46.455557 0.37464,-0.202362 21.17645,7.19578 z m 0.37464,-1.988808 -0.37464,0.202362 21.55109,8.779864 z"
+     style="fill:#ffbbbb;stroke-width:0.515048"
+     id="path69420"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 223.52629,-48.242003 v 1.786446 l 0.37464,-1.988808 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69422"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 223.90093,-48.444365 -0.37464,1.988808 v -1.786446 z"
+     style="fill:#ffbbbb;stroke-width:0.515048"
+     id="path69424"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 223.52629,-46.455557 21.5511,6.993418 m -21.5511,-8.779864 21.5511,8.779864 m -91.51067,-28.510348 v 25.724821 m 0,0 25.60318,0.627389 m 44.35639,-6.621726 v 1.786446 m 0,0 v -1.786446"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69426"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 223.52629,-48.242003 v 1.786446 l 21.55109,6.993418 z"
+     style="fill:#ffbbbb;stroke-width:0.515048"
+     id="path69428"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 153.56672,-67.972487 25.60318,0.627389"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69430"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 153.56672,-67.972487 v 25.724821 l 25.60318,-25.097432 z m 0,25.724821 25.60318,0.627389 v -25.724821 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69432"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 179.1699,-67.345098 v 25.724821"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69434"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 208.01749,-32.620292 -10.78959,5.828031 v -51.449642 z m 9.69296,6.329942 -20.48255,-0.501911 31.27213,-5.32612 z m -20.48255,-51.951553 20.48255,0.501911 -9.69296,-6.329942 z m 20.48255,0.501911 v 51.449642 l 10.78958,-57.277673 z m 15.5365,80.6013862 -0.35178,-0.00862 21.93095,-11.6474409 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69436"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 197.2279,-78.241903 v 51.449642 m 0,0 20.48255,0.501911"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69438"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="M 254.47433,-8.8032873 232.89517,2.8527739 V -100.04651 Z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69440"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="M 217.71045,-77.739992 V -26.29035"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69442"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 197.2279,-26.792261 20.48255,0.501911 v -51.449642 z m 36.01905,-73.245629 V 2.8613942 L 254.82612,-111.69395 Z m -36.01905,21.795987 v 51.449642 l 20.48255,-50.947731 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69444"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 197.2279,-78.241903 20.48255,0.501911"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69446"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 232.89517,-100.04651 0.35178,0.009 21.22738,-11.66468 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69448"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="M 232.89517,-100.04651 V 2.8527739 m 0,0 0.35178,0.00862 m 0,-102.8992839 V 2.8613942"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69450"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 232.89517,2.8527739 0.35178,0.00862 V -100.03789 Z m 0,-102.8992839 V 2.8527739 l 0.35178,-102.8906639 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69452"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m 232.89517,-100.04651 0.35178,0.009"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69454"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;line-height:1.25;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+     x="-120.01905"
+     y="-128.26991"
+     id="text70160"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400"><tspan
+       sodipodi:role="line"
+       id="tspan70158"
+       x="-120.01905"
+       y="-128.26991">Input</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:10.66666667px;line-height:1.25;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Normal';font-variant-ligatures:none;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+     x="-80.852226"
+     y="-96.992607"
+     id="text71124"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400"><tspan
+       sodipodi:role="line"
+       x="-80.852226"
+       y="-96.992607"
+       id="tspan72362"
+       style="text-align:center;text-anchor:middle;-inkscape-font-specification:'Times New Roman, Normal';font-family:'Times New Roman';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10.66666667px;font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal" /></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;line-height:1.25;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+     x="232.42694"
+     y="-115.71587"
+     id="text70160-9"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400"><tspan
+       sodipodi:role="line"
+       id="tspan70158-6"
+       x="232.42694"
+       y="-115.71587">Output</tspan></text>
+  <path
+     style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Lend)"
+     d="M -101.53088,-122.40579 48.00914,-64.79535"
+     id="path81878"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Lend)"
+     d="M -101.03243,-13.51473 47.51069,-51.63564"
+     id="path81880"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;line-height:1.25;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+     x="-39.733238"
+     y="-108.12037"
+     id="text82686"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400"><tspan
+       sodipodi:role="line"
+       id="tspan82684"
+       x="-39.733238"
+       y="-108.12037">Encoder</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;line-height:1.25;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+     x="65.929672"
+     y="-90.45005"
+     id="text82686-7"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400"><tspan
+       sodipodi:role="line"
+       x="65.929672"
+       y="-90.45005"
+       id="tspan83329"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle">Latent space</tspan><tspan
+       sodipodi:role="line"
+       x="67.263008"
+       y="-77.116676"
+       id="tspan85193"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle">(Bottleneck) </tspan></text>
+  <path
+     style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Lend)"
+     d="M 83.3551,-50.75729 232.8952,6.85277"
+     id="path87334"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Lend)"
+     d="m 83.3551,-65.1885 149.5401,-38.85801"
+     id="path87529"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;line-height:1.25;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+     x="144.77332"
+     y="-101.84336"
+     id="text82686-5"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400"><tspan
+       sodipodi:role="line"
+       id="tspan82684-4"
+       x="144.77332"
+       y="-101.84336">Decoder</tspan></text>
+  <path
+     d="m -118.36966,-67.228957 0.35179,0.0086 v -1.786446 z m 0,-1.786446 v 1.786446 l 0.35179,-1.777825 z"
+     style="fill:#99ddff;stroke-width:0.515048"
+     id="path69168"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -118.36966,-69.015403 0.35179,0.0086"
+     style="fill:none;stroke:#000000;stroke-width:0.515048;stroke-linecap:round"
+     id="path69170"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="m -118.19376,-69.011093 v 1.786446 l 24.122882,2.057695 z"
+     style="fill:#ffbbbb;stroke-width:0.515048"
+     id="path69112"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+  <path
+     d="M -122.2598,-108.74935 V -5.8500665 l 21.57916,-114.5553435 z"
+     style="fill:#eeeeee;fill-opacity:0.34;stroke-width:0.515048"
+     id="path69032"
+     inkscape:export-filename="/home/aijjeh/Documents/aidd/reports/beamer_presentations/PhD_presentation/Ijjeh_version/figures/nn_encoder_decoder.png"
+     inkscape:export-xdpi="2400"
+     inkscape:export-ydpi="2400" />
+</svg>

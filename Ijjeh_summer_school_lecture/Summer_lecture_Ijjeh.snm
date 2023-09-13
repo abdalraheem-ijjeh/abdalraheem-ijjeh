@@ -1,0 +1,5 @@
+\beamer@slide {frame1<1>}{2}
+\beamer@slide {frame1}{2}
+\beamer@slide {eqn:rms}{33}
+\beamer@slide {eqn:iou}{39}
+\beamer@slide {eqn:mean_size_error}{39}

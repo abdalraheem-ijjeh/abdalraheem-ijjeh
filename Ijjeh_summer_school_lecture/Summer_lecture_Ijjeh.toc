@@ -1,0 +1,9 @@
+\beamer@sectionintoc {1}{Introduction to SHM/NDT}{3}{0}{1}
+\beamer@sectionintoc {2}{Artificial intelligence, machine learning, and deep learning}{6}{0}{2}
+\beamer@sectionintoc {3}{AI approaches for Anomaly detection}{10}{0}{3}
+\beamer@subsectionintoc {3}{1}{A dive into DL}{14}{0}{3}
+\beamer@sectionintoc {4}{Case study: Delamination identification in CFRP}{22}{0}{4}
+\beamer@subsectionintoc {4}{1}{An overview of guided waves}{23}{0}{4}
+\beamer@subsectionintoc {5}{1}{Synthetic dataset generation}{31}{0}{4}
+\beamer@subsectionintoc {5}{2}{Delamination identification in CFRP}{34}{0}{4}
+\beamer@sectionintoc {6}{Conclusions}{47}{0}{5}

@@ -1,0 +1,22 @@
+\documentclass{article}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+
+\usepackage[]{booktabs}
+\begin{document}
+	\begin{table}[]
+		\caption{Average MSE for each cavity type (for each type 2900 samples were used for training and 100 samples for testing)}
+		\begin{tabular}{lcccccc}
+			\toprule
+			Cavities & \multicolumn{2}{c}{1000 - 4000} & \multicolumn{2}{c}{4000-7000} & \multicolumn{2}{c}{8000-11000} \\
+			\midrule
+			& Training & Testing & Training & Testing & Training & Testing \\
+			\midrule
+			Normalised data & 1.3724e-05 & 2.2066e-05 & 9.9748e-06 & 2.7154e-05 & 1.2179e-05 & 1.8168e-05 \\
+			Not normalised & 6.1353e6 & 9.8643e6 & 4.4591e6 & 1.2139e7 & 5.4444e6 & 8.12184e6 \\
+			\bottomrule
+			&  &  &  &  &  & 
+		\end{tabular}
+
+	\end{table}
+	It is important to notice that in our work, we used a normalised dataset for training.
+\end{document}

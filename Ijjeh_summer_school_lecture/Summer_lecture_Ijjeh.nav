@@ -1,0 +1,133 @@
+\headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
+\headcommand {\beamer@framepages {1}{1}}
+\headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
+\headcommand {\beamer@framepages {2}{2}}
+\headcommand {\beamer@sectionpages {1}{2}}
+\headcommand {\beamer@subsectionpages {1}{2}}
+\headcommand {\sectionentry {1}{Introduction to SHM/NDT}{3}{Introduction to SHM/NDT}{0}}
+\headcommand {\slideentry {1}{0}{1}{3/3}{}{0}}
+\headcommand {\beamer@framepages {3}{3}}
+\headcommand {\slideentry {1}{0}{2}{4/4}{}{0}}
+\headcommand {\beamer@framepages {4}{4}}
+\headcommand {\slideentry {1}{0}{3}{5/5}{}{0}}
+\headcommand {\beamer@framepages {5}{5}}
+\headcommand {\beamer@sectionpages {3}{5}}
+\headcommand {\beamer@subsectionpages {3}{5}}
+\headcommand {\sectionentry {2}{Artificial intelligence, machine learning, and deep learning}{6}{Artificial intelligence, machine learning, and deep learning}{0}}
+\headcommand {\slideentry {2}{0}{1}{6/6}{}{0}}
+\headcommand {\beamer@framepages {6}{6}}
+\headcommand {\slideentry {2}{0}{2}{7/7}{}{0}}
+\headcommand {\beamer@framepages {7}{7}}
+\headcommand {\slideentry {2}{0}{3}{8/8}{}{0}}
+\headcommand {\beamer@framepages {8}{8}}
+\headcommand {\slideentry {2}{0}{4}{9/9}{}{0}}
+\headcommand {\beamer@framepages {9}{9}}
+\headcommand {\beamer@sectionpages {6}{9}}
+\headcommand {\beamer@subsectionpages {6}{9}}
+\headcommand {\sectionentry {3}{AI approaches for Anomaly detection}{10}{AI approaches for Anomaly detection}{0}}
+\headcommand {\slideentry {3}{0}{1}{10/10}{}{0}}
+\headcommand {\beamer@framepages {10}{10}}
+\headcommand {\slideentry {3}{0}{2}{11/11}{}{0}}
+\headcommand {\beamer@framepages {11}{11}}
+\headcommand {\slideentry {3}{0}{3}{12/12}{}{0}}
+\headcommand {\beamer@framepages {12}{12}}
+\headcommand {\slideentry {3}{0}{4}{13/13}{}{0}}
+\headcommand {\beamer@framepages {13}{13}}
+\headcommand {\beamer@subsectionpages {10}{13}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{14}{A dive into DL}}
+\headcommand {\slideentry {3}{1}{1}{14/14}{A dive into DL}{0}}
+\headcommand {\beamer@framepages {14}{14}}
+\headcommand {\slideentry {3}{1}{2}{15/15}{A dive into DL}{0}}
+\headcommand {\beamer@framepages {15}{15}}
+\headcommand {\slideentry {3}{1}{3}{16/16}{A dive into DL}{0}}
+\headcommand {\beamer@framepages {16}{16}}
+\headcommand {\slideentry {3}{1}{4}{17/17}{A dive into DL}{0}}
+\headcommand {\beamer@framepages {17}{17}}
+\headcommand {\slideentry {3}{1}{5}{18/18}{A dive into DL}{0}}
+\headcommand {\beamer@framepages {18}{18}}
+\headcommand {\slideentry {3}{1}{6}{19/19}{A dive into DL}{0}}
+\headcommand {\beamer@framepages {19}{19}}
+\headcommand {\slideentry {3}{1}{7}{20/20}{A dive into DL}{0}}
+\headcommand {\beamer@framepages {20}{20}}
+\headcommand {\slideentry {3}{1}{8}{21/21}{A dive into DL}{0}}
+\headcommand {\beamer@framepages {21}{21}}
+\headcommand {\beamer@sectionpages {10}{21}}
+\headcommand {\beamer@subsectionpages {14}{21}}
+\headcommand {\sectionentry {4}{Case study: Delamination identification in CFRP}{22}{Case study: Delamination identification in CFRP}{0}}
+\headcommand {\slideentry {4}{0}{1}{22/22}{}{0}}
+\headcommand {\beamer@framepages {22}{22}}
+\headcommand {\beamer@subsectionpages {22}{22}}
+\headcommand {\beamer@subsectionentry {0}{4}{1}{23}{An overview of guided waves}}
+\headcommand {\slideentry {4}{1}{1}{23/23}{An overview of guided waves}{0}}
+\headcommand {\beamer@framepages {23}{23}}
+\headcommand {\slideentry {4}{1}{2}{24/24}{An overview of guided waves}{0}}
+\headcommand {\beamer@framepages {24}{24}}
+\headcommand {\slideentry {4}{1}{3}{25/25}{An overview of guided waves}{0}}
+\headcommand {\beamer@framepages {25}{25}}
+\headcommand {\beamer@sectionpages {22}{25}}
+\headcommand {\beamer@subsectionpages {23}{25}}
+\headcommand {\sectionentry {5}{Experimental measurements}{26}{Experimental measurements}{0}}
+\headcommand {\slideentry {5}{0}{1}{26/26}{}{0}}
+\headcommand {\beamer@framepages {26}{26}}
+\headcommand {\slideentry {5}{0}{2}{27/27}{}{0}}
+\headcommand {\beamer@framepages {27}{27}}
+\headcommand {\slideentry {5}{0}{3}{28/28}{}{0}}
+\headcommand {\beamer@framepages {28}{28}}
+\headcommand {\slideentry {5}{0}{4}{29/29}{}{0}}
+\headcommand {\beamer@framepages {29}{29}}
+\headcommand {\slideentry {5}{0}{5}{30/30}{}{0}}
+\headcommand {\beamer@framepages {30}{30}}
+\headcommand {\beamer@subsectionpages {26}{30}}
+\headcommand {\beamer@subsectionentry {0}{5}{1}{31}{Synthetic dataset generation}}
+\headcommand {\slideentry {5}{1}{1}{31/31}{Synthetic dataset generation}{0}}
+\headcommand {\beamer@framepages {31}{31}}
+\headcommand {\slideentry {5}{1}{2}{32/32}{Synthetic dataset generation}{0}}
+\headcommand {\beamer@framepages {32}{32}}
+\headcommand {\slideentry {5}{1}{3}{33/33}{Synthetic dataset generation}{0}}
+\headcommand {\beamer@framepages {33}{33}}
+\headcommand {\beamer@subsectionpages {31}{33}}
+\headcommand {\beamer@subsectionentry {0}{5}{2}{34}{Delamination identification in CFRP}}
+\headcommand {\slideentry {5}{2}{1}{34/34}{Delamination identification in CFRP}{0}}
+\headcommand {\beamer@framepages {34}{34}}
+\headcommand {\slideentry {5}{2}{2}{35/35}{Delamination identification in CFRP}{0}}
+\headcommand {\beamer@framepages {35}{35}}
+\headcommand {\slideentry {5}{2}{3}{36/36}{Delamination identification in CFRP}{0}}
+\headcommand {\beamer@framepages {36}{36}}
+\headcommand {\beamer@subsectionpages {34}{36}}
+\headcommand {\beamer@subsectionentry {0}{5}{3}{37}{RMS based models}}
+\headcommand {\slideentry {5}{3}{1}{37/37}{RMS based models}{0}}
+\headcommand {\beamer@framepages {37}{37}}
+\headcommand {\beamer@subsectionpages {37}{37}}
+\headcommand {\beamer@subsectionentry {0}{5}{4}{38}{Full wavefield frames based model}}
+\headcommand {\slideentry {5}{4}{1}{38/38}{Full wavefield frames based model}{0}}
+\headcommand {\beamer@framepages {38}{38}}
+\headcommand {\slideentry {5}{4}{2}{39/39}{Full wavefield frames based model}{0}}
+\headcommand {\beamer@framepages {39}{39}}
+\headcommand {\beamer@subsectionpages {38}{39}}
+\headcommand {\beamer@subsectionentry {0}{5}{5}{40}{Evaluation: Numerical cases}}
+\headcommand {\slideentry {5}{5}{1}{40/40}{Evaluation: Numerical cases}{0}}
+\headcommand {\beamer@framepages {40}{40}}
+\headcommand {\slideentry {5}{5}{2}{41/43}{Evaluation: Numerical cases}{0}}
+\headcommand {\beamer@framepages {41}{43}}
+\headcommand {\beamer@subsectionpages {40}{43}}
+\headcommand {\beamer@subsectionentry {0}{5}{6}{44}{Evaluation: Experimental cases}}
+\headcommand {\slideentry {5}{6}{1}{44/44}{Evaluation: Experimental cases}{0}}
+\headcommand {\beamer@framepages {44}{44}}
+\headcommand {\slideentry {5}{6}{2}{45/45}{Evaluation: Experimental cases}{0}}
+\headcommand {\beamer@framepages {45}{45}}
+\headcommand {\slideentry {5}{6}{3}{46/46}{Evaluation: Experimental cases}{0}}
+\headcommand {\beamer@framepages {46}{46}}
+\headcommand {\beamer@sectionpages {26}{46}}
+\headcommand {\beamer@subsectionpages {44}{46}}
+\headcommand {\sectionentry {6}{Conclusions}{47}{Conclusions}{0}}
+\headcommand {\slideentry {6}{0}{1}{47/47}{}{0}}
+\headcommand {\beamer@framepages {47}{47}}
+\headcommand {\slideentry {6}{0}{2}{48/48}{}{0}}
+\headcommand {\beamer@framepages {48}{48}}
+\headcommand {\slideentry {6}{0}{3}{49/49}{}{0}}
+\headcommand {\beamer@framepages {49}{49}}
+\headcommand {\beamer@partpages {1}{49}}
+\headcommand {\beamer@subsectionpages {47}{49}}
+\headcommand {\beamer@sectionpages {47}{49}}
+\headcommand {\beamer@documentpages {49}}
+\headcommand {\gdef \inserttotalframenumber {39}}
